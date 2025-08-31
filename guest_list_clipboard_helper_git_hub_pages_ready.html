@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guest List Clipboard Helper</title>
+  <!-- Optional: your own CSS next to this file -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind (CDN) for quick styling) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- PapaParse for robust CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <style>
+    .btn { @apply px-3 py-1.5 rounded-xl border text-sm shadow-sm transition active:scale-[0.98]; }
+    .btn-primary { @apply border-gray-300 bg-white hover:bg-gray-50; }
+    .chip { @apply text-xs px-2 py-0.5 rounded-full bg-gray-100; }
+    .mono { font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+  <div class="max-w-5xl mx-auto p-4 sm:p-6">
+    <header class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+      <div>
+        <h1 class="text-2xl font-semibold">Guest List Clipboard Helper</h1>
+        <p class="text-sm text-gray-600">Auto-loads <code>guests.csv</code>. One-click copy for invitation links & WhatsApp messages.</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <input id="searchInput" type="search" placeholder="Search name, ID, relation…" class="w-64 max-w-full px-3 py-2 border rounded-xl bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300" />
+        <span id="countChip" class="chip">0 guests</span>
+      </div>
+    </header>
+
+    <!-- Fixed config, edit in code if needed -->
+    <section class="mb-4">
+      <div class="bg-white border rounded-2xl p-4 shadow-sm text-sm text-gray-700">
+        <div class="flex flex-wrap gap-x-6 gap-y-2">
+          <div>Base URL: <code id="cfgBaseUrl" class="mono"></code></div>
+          <div>Due date: <code id="cfgDue" class="mono"></code></div>
+          <div>CSV file: <code class="mono">guest_rows.csv</code></div>
+        </div>
+        <p class="text-xs text-gray-500 mt-1">To update the list, push a new <code>guest_rows.csv</code> to the repo (no manual upload on the page).</p>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <div class="bg-white border rounded-2xl shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead class="bg-gray-100">
+              <tr class="text-left">
+                <th class="px-3 py-2 font-medium">ID</th>
+                <th class="px-3 py-2 font-medium">Name</th>
+                <th class="px-3 py-2 font-medium">Type</th>
+                <th class="px-3 py-2 font-medium">Relation</th>
+                <th class="px-3 py-2 font-medium">Link</th>
+                <th class="px-3 py-2 font-medium">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="text-xs text-gray-500 mt-2">Tip: Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>K</kbd> to focus search.</p>
+    </section>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-4 px-3 py-2 rounded-xl bg-black/80 text-white text-sm shadow-lg opacity-0 pointer-events-none transition">Copied!</div>
+
+  <script>
+    // ====== CONFIG ======
+    const BASE_URL = 'https://www.alfoncindy.site'; // final invitation domain (no trailing slash)
+    const DUE = '7th September 2025';
+    const CSV_PATH = 'guest_rows.csv';
+
+    // Show config in UI
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.getElementById('cfgBaseUrl').textContent = BASE_URL;
+      document.getElementById('cfgDue').textContent = DUE;
+    });
+
+    // ====== Templates ======
+    const TPL_RECEPTION = ({name, url}) => `Dear ${name},
+
+With grateful hearts and joyful spirits,
+we invite you to an evening of celebration honoring the marriage of
+
+Alfon Lavinski
+Son of Mr. Rudy Susanto Sudjono & Yosefin Paulina Sim
+
+And
+
+Eugenia Cindy Citrasari
+Daughter of Mr. Hony Surjono & Mrs. Monika Pariva.
+
+📅 Saturday, 27 September 2025
+🕖 19:00 WIB
+📍 Gran Mahakam Hotel, Magnolia Ballroom
+
+May this night be filled with warmth, laughter, and treasured memories,
+made even more special by your presence.
+
+Kindly confirm your attendance through the link below before ${DUE}: 
+${url}
+
+Warm Regards,
+{regards}`;
+
+    const TPL_HOLY = ({name, url}) => `Dear ${name},
+
+With hearts full of gratitude, we joyfully share the blessing that our beloved son
+
+Vincentius Alfon Lavinski
+Son of Mr. Rudy Susanto Sudjono & Mrs. Yosefin Paulina Sim, 
+
+will soon unite in holy matrimony with
+
+Eugenia Abigail Cindy Citrasari
+Daughter of Mr. Niketius Hony Surjono & Mrs. Auxillia Monika Pariva,
+
+📅 Saturday, 27 September 2025
+🕕 12:00 WIB
+📍 Gereja St. Andreas Kim Tae-gon, Kelapa Gading, Jakarta Utara
+
+It would mean the world to us if you could join in this moment of joy,
+to witness their vows and shower them with your prayers.
+
+Kindly confirm your attendance through the link below before ${DUE}
+${url}
+
+Your presence is not only an honor, but also a precious gift to our family.
+
+With love and gratitude, 
+{regards}`;
+
+    // ====== Utilities ======
+    const $ = (sel) => document.querySelector(sel);
+    const tbody = $('#tbody');
+    const searchInput = $('#searchInput');
+    const countChip = $('#countChip');
+
+    function normalizeKey(k){ return String(k||'').toLowerCase().trim(); }
+
+    function detectKeys(keys){
+      const k = keys.map(normalizeKey);
+      const findOne = (candidates) => candidates.find(c => k.includes(c));
+      const idKey = findOne(['id','guest_id','no','nomor']);
+      const nameKey = findOne(['name','guest_name','nama','full_name']);
+      const typeKey = findOne(['invitation_type','type']);
+      const relationKey = findOne(['relation','relasi','hubungan']);
+      const linkKey = findOne(['link','custom_link','url']); // if you later add a column for full custom URL
+      return { idKey, nameKey, typeKey, relationKey, linkKey };
+    }
+
+    function buildLink(guest) {
+      // If CSV provides a direct URL column, prefer it; else BASE_URL/id
+      if (guest.customLink) return guest.customLink;
+      return `${BASE_URL}/${encodeURIComponent(guest.id)}`;
+    }
+
+    function regardsFor(type, relation){
+      const r = String(relation||'').toLowerCase();
+      const isAlfon = r === 'alfon' || r === 'alfon_relation';
+      const isCindy = r === 'cindy' || r === 'cindy_relation';
+      const isAlfonParent = r === 'alfon_parent' || r === 'alfon_parent_relation';
+      const isCindyParent = r === 'cindy_parent' || r === 'cindy_parent_relation';
+
+      if (type === 'holy_matrimony'){
+        if (isAlfonParent) return `Rudy Susanto Sudjono & Yosefin Paulina Sim
+(the proud parents of the groom)`;
+        if (isCindyParent) return `Niketius Hony Surjono & Auxillia Monika Pariva
+(the proud parents of the bride)`;
+      } else { // reception
+        if (isAlfonParent) return `Rudy Susanto Sudjono & Yosefin Paulina Sim
+(the proud parents of the groom)`;
+        if (isCindyParent) return `Hony Surjono & Monika Pariva
+(the proud parents of the bride)`;
+      }
+      if (isAlfon || isCindy) return 'Alfon & Cindy';
+      // default fallback
+      return 'Alfon & Cindy';
+    }
+
+    function buildMessage(g){
+      const url = buildLink(g);
+      const base = { name: g.name || '', url };
+      const type = String(g.invitation_type || '').toLowerCase();
+      let raw = type === 'holy_matrimony' ? TPL_HOLY(base) : TPL_RECEPTION(base);
+      raw = raw.replace('{regards}', regardsFor(type, g.relation));
+      return raw;
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.remove('opacity-0');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => el.classList.add('opacity-0'), 1400);
+    }
+
+    function renderRows(list) {
+      tbody.innerHTML = '';
+      list.forEach((g) => {
+        const link = buildLink(g);
+        const waText = buildMessage(g);
+        const waHref = `https://wa.me/?text=${encodeURIComponent(waText)}`;
+        const tr = document.createElement('tr');
+        tr.className = 'border-t';
+        tr.innerHTML = `
+          <td class="px-3 py-2 mono">${g.id ?? ''}</td>
+          <td class="px-3 py-2">${g.name ?? ''}</td>
+          <td class="px-3 py-2">${g.invitation_type ?? ''}</td>
+          <td class="px-3 py-2">${g.relation ?? ''}</td>
+          <td class="px-3 py-2"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">${link}</a></td>
+          <td class="px-3 py-2">
+            <div class="flex flex-wrap gap-2">
+              <button class="btn btn-primary" data-action="copy-link">Copy link</button>
+              <button class="btn btn-primary" data-action="copy-wa">Copy WA msg</button>
+              <a class="btn btn-primary" href="${waHref}" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+            </div>
+          </td>`;
+        tbody.appendChild(tr);
+        const [copyLinkBtn, copyWABtn] = tr.querySelectorAll('button');
+        copyLinkBtn.addEventListener('click', () => { navigator.clipboard.writeText(link).then(()=>showToast('Link copied')); });
+        copyWABtn.addEventListener('click', () => { navigator.clipboard.writeText(waText).then(()=>showToast('Message copied')); });
+      });
+      countChip.textContent = `${list.length} guest${list.length !== 1 ? 's' : ''}`;
+    }
+
+    function applySearch(all){
+      const q = searchInput.value.trim().toLowerCase();
+      const filtered = !q ? all : all.filter(g =>
+        String(g.id ?? '').toLowerCase().includes(q) ||
+        String(g.name ?? '').toLowerCase().includes(q) ||
+        String(g.invitation_type ?? '').toLowerCase().includes(q) ||
+        String(g.relation ?? '').toLowerCase().includes(q)
+      );
+      renderRows(filtered);
+    }
+
+    // Keyboard shortcut to focus search
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+
+    // Load guests.csv and render
+    let ALL = [];
+    fetch(CSV_PATH)
+      .then(res => res.text())
+      .then(text => {
+        const parsed = Papa.parse(text, { header:true, skipEmptyLines:true, transformHeader: h => h.replace(/﻿/g,'') });
+        const rows = parsed.data || [];
+        if(!rows.length){ renderRows([]); return; }
+        const keys = Object.keys(rows[0] || {});
+        const { idKey, nameKey, typeKey, relationKey, linkKey } = detectKeys(keys);
+        ALL = rows.map(r => ({
+          id: r[idKey],
+          name: r[nameKey],
+          invitation_type: r[typeKey],
+          relation: r[relationKey],
+          ...(linkKey ? { customLink: r[linkKey] } : {})
+        })).filter(g => g.id && g.name);
+        applySearch(ALL);
+      });
+
+    searchInput.addEventListener('input', ()=>applySearch(ALL));
+  </script>
+</body>
+</html>
