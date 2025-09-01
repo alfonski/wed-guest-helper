@@ -1,7 +1,6 @@
 id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,wishes,relation
 1,Andreas Goh (Testing),reception,2,coming,2,2025-08-25 00:58:00.808+00,,cindy_relation
-2,Tante Tina (Testing),holy_matrimony,1,coming,1,2025-08-18 05:43:42.843+00,,alfon_parent_relation
-3,Phang Thu Kong & Family (Testing),reception,,coming,4,2025-08-25 01:05:19.431+00,,alfon_parent_relation
+2,Mellisa (Testing),holy_matrimony,1,coming,1,2025-08-18 05:43:42.843+00,,alfon_parent_relation
 901,Hony Surjono,reception,1,coming,1,2025-08-30 13:51:46.536+00,Congrats!,cindy_parent_relation
 902,Monika Pariva,reception,2,coming,2,2025-08-30 13:53:58.557+00,Happy wedding day..,cindy_parent_relation
 903,G. Tjiomas dan Yenny,reception,2,not_coming,,2025-08-30 13:58:56.433+00,Sorry..,cindy_parent_relation
