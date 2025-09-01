@@ -101,28 +101,31 @@
 
     function renderRows(list) {
       tbody.innerHTML = '';
-      list.forEach(g => {
-        const link = buildLink(g);
-        const msg = g.message;
+      list.forEach((g) => {
         const tr = document.createElement('tr');
-        tr.className = 'border-t';
+        tr.className = 'border-t align-top';
+        const link = buildLink(g);
+        const waText = buildMessage(g);
+        const nameCellMobileLink = `<div class="md:hidden mt-2"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">Open link</a></div>`;
         tr.innerHTML = `
-          <td class="px-3 py-2">${g.id}</td>
-          <td class="px-3 py-2">${g.name}</td>
-          <td class="px-3 py-2">${formatType(g.invitation_type)}</td>
-          <td class="px-3 py-2">${formatRelation(g.relation)}</td>
-          <td class="px-3 py-2"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">${link}</a></td>
-          <td class="px-3 py-2">
-            <div class="flex flex-wrap gap-2 py-1">
-              <button class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow active:scale-95 transition" data-copy="${link}">Copy Link</button>
-              <button class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow active:scale-95 transition" data-copy="${msg}">Copy Invitation Message</button>
+          <td class="px-3 py-2 mono align-top">${g.id ?? ''}</td>
+          <td class="px-3 py-2 align-top">${g.name ?? ''}${nameCellMobileLink}</td>
+          <td class="px-3 py-2 align-top">${g.invitation_type ?? ''}</td>
+          <td class="px-3 py-2 align-top">${g.relation ?? ''}</td>
+          <td class="px-3 py-2 hidden md:table-cell align-top"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">${link}</a></td>
+          <td class="px-3 py-2 align-top w-48">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full">
+              <button class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow w-full sm:w-auto" data-action="copy-link">Copy Link</button>
+              <button class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow w-full sm:w-auto" data-action="copy-wa">Copy Invitation Message</button>
             </div>
           </td>`;
         tbody.appendChild(tr);
-        tr.querySelectorAll('button').forEach(btn => {
-          btn.addEventListener('click', () => {
-            navigator.clipboard.writeText(btn.dataset.copy).then(()=>showToast('Copied!'));
-          });
+        const [copyLinkBtn, copyWABtn] = tr.querySelectorAll('button');
+        copyLinkBtn.addEventListener('click', () => { navigator.clipboard.writeText(link).then(()=>showToast('Link copied')); });
+        copyWABtn.addEventListener('click', () => { navigator.clipboard.writeText(waText).then(()=>showToast('Message copied')); });
+      });
+      countChip.textContent = `${list.length} guest${list.length !== 1 ? 's' : ''}`;
+    });
         });
       });
       countChip.textContent = `${list.length} guest${list.length !== 1 ? 's' : ''}`;
