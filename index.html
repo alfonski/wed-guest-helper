@@ -51,7 +51,7 @@
               <th class="px-3 py-2 font-medium">Name</th>
               <th class="px-3 py-2 font-medium">Type</th>
               <th class="px-3 py-2 font-medium">Relation</th>
-              <th class="px-3 py-2 font-medium hidden md:table-cell">Link</th>
+              <th class="px-3 py-2 font-medium">RSVP</th>
               <th class="px-3 py-2 font-medium">Actions</th>
             </tr>
           </thead>
@@ -143,6 +143,25 @@
       return `Dear ${name},\n\nWith grateful hearts and joyful spirits,\nwe invite you to an evening of celebration honoring the marriage of\n\nAlfon Lavinski\nSon of Mr. Rudy Susanto Sudjono & Yosefin Paulina Sim\n\nAnd\n\nEugenia Cindy Citrasari\nDaughter of Mr. Hony Surjono & Mrs. Monika Pariva.\n\n📅 Saturday, 27 September 2025\n🕖 19:00 WIB\n📍 Gran Mahakam Hotel, Magnolia Ballroom\n\nMay this night be filled with warmth, laughter, and treasured memories,\nmade even more special by your presence.\n\nKindly confirm your attendance through the link below before ${DUE}:\n${url}\n\nWarm Regards,\n${regardsFor(g.relation, type)}`;
     }
 
+    // Normalize RSVP status to 3 buckets
+    function normStatus(s){
+      const v = String(s || '').toLowerCase().trim();
+      if (['coming','attending','yes','confirmed','datang'].includes(v)) return 'coming';
+      if (['not_coming','not coming','declined','no','tidak datang','ga dateng','gak datang'].includes(v)) return 'not_coming';
+      return 'no_respond';
+    }
+
+    function statusLabel(g){
+      const s = normStatus(g.rsvp_status);
+      const map = {
+        coming:      { text: 'Coming',      cls: 'bg-green-100 text-green-800' },
+        not_coming:  { text: 'Not Coming',  cls: 'bg-red-100 text-red-800' },
+        no_respond:  { text: 'No Respond',  cls: 'bg-gray-100 text-gray-700' },
+      };
+      const { text, cls } = map[s];
+      return `<span class="inline-block px-2 py-0.5 rounded-full text-xs font-medium ${cls}">${text}</span>`;
+    }
+
     // ===== Render =====
     function renderRows(list) {
       tbody.innerHTML = '';
@@ -157,7 +176,7 @@
           <td class="px-3 py-2 align-top">${g.name ?? ''}${nameCellMobileLink}</td>
           <td class="px-3 py-2 align-top">${formatType(g.invitation_type) ?? ''}</td>
           <td class="px-3 py-2 align-top">${formatRelation(g.relation) ?? ''}</td>
-          <td class="px-3 py-2 hidden md:table-cell align-top"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">${link}</a></td>
+          <td class="px-3 py-2 align-top">${statusLabel(g)}</td>
           <td class="px-3 py-2 align-top w-48">
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full">
               <button class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow w-full sm:w-auto" data-action="copy-link">Copy Link</button>
@@ -203,7 +222,8 @@
           id: r.id,
           name: r.name,
           invitation_type: r.invitation_type,
-          relation: r.relation
+          relation: r.relation,
+          rsvp_status: r.rsvp_status
         })).filter(g => g.id && g.name);
         window.ALL = guests;
         applySearch(guests);
