@@ -31,6 +31,18 @@
       </div>
     </section> -->
 
+    <!-- Quick Filters -->
+    <section class="mb-4">
+      <div class="flex flex-wrap gap-2 items-center">
+        <span class="text-sm text-gray-600">Quick filter:</span>
+        <button class="rel-chip border border-blue-600 bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full text-xs" data-rel="">All</button>
+        <button class="rel-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="alfon_relation">Alfon</button>
+        <button class="rel-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="cindy_relation">Cindy</button>
+        <button class="rel-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="alfon_parent_relation">Alfon's Parent</button>
+        <button class="rel-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="cindy_parent_relation">Cindy's Parent</button>
+      </div>
+    </section>
+
     <section>
       <div class="bg-white border rounded-2xl shadow-sm overflow-x-auto">
         <table class="min-w-full text-sm">
@@ -58,34 +70,57 @@
     const DUE = '7th September 2025';
     const CSV_PATH = 'guest_rows.csv';
 
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', ()=>{
       document.getElementById('cfgBaseUrl').textContent = BASE_URL;
       document.getElementById('cfgDue').textContent = DUE;
     });
 
-    // ===== Maps & formatters =====
     const RELATION_MAP = {
       'alfon_parent_relation': "Alfon's Parent",
       'cindy_parent_relation': "Cindy's Parent",
       'alfon_relation': 'Alfon',
       'cindy_relation': 'Cindy'
     };
-    const TYPE_MAP = { 'reception': 'Reception', 'holy_matrimony': 'Holy Matrimony' };
 
-    const formatRelation = (r) =>
-      RELATION_MAP[r] || (r ? r.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '');
+    const TYPE_MAP = {
+      'reception': 'Reception',
+      'holy_matrimony': 'Holy Matrimony'
+    };
 
-    const formatType = (t) =>
-      TYPE_MAP[t] || (t ? t.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '');
-
-    // ===== DOM helpers =====
     const $ = sel => document.querySelector(sel);
     const tbody = $('#tbody');
     const searchInput = $('#searchInput');
     const countChip = $('#countChip');
 
-    // ===== Core helpers =====
-    function buildLink(g) { return `${BASE_URL}/${encodeURIComponent(g.id)}`; }
+    // Quick relation filter
+    let activeRelFilter = '';
+    const relChips = document.querySelectorAll('.rel-chip');
+    function setActiveChip(target){
+      relChips.forEach(b=>{
+        b.classList.remove('border-blue-600','bg-blue-50','text-blue-700');
+        b.classList.add('border-gray-300','bg-white','text-gray-700');
+      });
+      target.classList.remove('border-gray-300','bg-white','text-gray-700');
+      target.classList.add('border-blue-600','bg-blue-50','text-blue-700');
+    }
+    relChips.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        activeRelFilter = (btn.dataset.rel || '').toLowerCase();
+        setActiveChip(btn);
+        applySearch(window.ALL || []);
+      });
+    });
+
+    function formatRelation(r) {
+      return RELATION_MAP[r] || (r ? r.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '');
+    }
+    function formatType(t) {
+      return TYPE_MAP[t] || (t ? t.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '');
+    }
+
+    function buildLink(g) {
+      return `${BASE_URL}/${encodeURIComponent(g.id)}`;
+    }
 
     function showToast(msg) {
       const el = document.getElementById('toast');
@@ -95,29 +130,6 @@
       showToast._t = setTimeout(() => el.classList.add('opacity-0'), 1400);
     }
 
-    function regardsFor(rel, type){
-      const r = String(rel||'').toLowerCase();
-      if (r === 'alfon_parent_relation')
-        return `Rudy Susanto Sudjono & Yosefin Paulina Sim\n(the proud parents of the groom)`;
-      if (r === 'cindy_parent_relation')
-        return type === 'holy_matrimony'
-          ? `Niketius Hony Surjono & Auxillia Monika Pariva\n(the proud parents of the bride)`
-          : `Hony Surjono & Monika Pariva\n(the proud parents of the bride)`;
-      if (r === 'alfon_relation' || r === 'cindy_relation') return 'Alfon & Cindy';
-      return 'Alfon & Cindy';
-    }
-
-    function buildMessage(g){
-      const url = buildLink(g);
-      const name = g.name;
-      const type = g.invitation_type;
-      if (type === 'holy_matrimony') {
-        return `Dear ${name},\n\nWith hearts full of gratitude, we joyfully share the blessing that our beloved son\n\nVincentius Alfon Lavinski\nSon of Mr. Rudy Susanto Sudjono & Mrs. Yosefin Paulina Sim,\n\nwill soon unite in holy matrimony with\n\nEugenia Abigail Cindy Citrasari\nDaughter of Mr. Niketius Hony Surjono & Mrs. Auxillia Monika Pariva,\n\n📅 Saturday, 27 September 2025\n🕕 12:00 WIB\n📍 Gereja St. Andreas Kim Tae-gon, Kelapa Gading, Jakarta Utara\n\nIt would mean the world to us if you could join in this moment of joy,\nto witness their vows and shower them with your prayers.\n\nKindly confirm your attendance through the link below before ${DUE}\n${url}\n\nYour presence is not only an honor, but also a precious gift to our family.\n\nWith love and gratitude,\n${regardsFor(g.relation, type)}`;
-      }
-      return `Dear ${name},\n\nWith grateful hearts and joyful spirits,\nwe invite you to an evening of celebration honoring the marriage of\n\nAlfon Lavinski\nSon of Mr. Rudy Susanto Sudjono & Yosefin Paulina Sim\n\nAnd\n\nEugenia Cindy Citrasari\nDaughter of Mr. Hony Surjono & Mrs. Monika Pariva.\n\n📅 Saturday, 27 September 2025\n🕖 19:00 WIB\n📍 Gran Mahakam Hotel, Magnolia Ballroom\n\nMay this night be filled with warmth, laughter, and treasured memories,\nmade even more special by your presence.\n\nKindly confirm your attendance through the link below before ${DUE}:\n${url}\n\nWarm Regards,\n${regardsFor(g.relation, type)}`;
-    }
-
-    // ===== Render =====
     function renderRows(list) {
       tbody.innerHTML = '';
       list.forEach((g) => {
@@ -125,18 +137,13 @@
         tr.className = 'border-t align-top';
         const link = buildLink(g);
         const waText = buildMessage(g);
-        const nameCellMobileLink =
-          `<div class="md:hidden mt-2">
-            <a href="${link}" target="_blank" class="text-blue-600 underline break-all">Open link</a>
-          </div>`;
+        const nameCellMobileLink = `<div class="md:hidden mt-2"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">Open link</a></div>`;
         tr.innerHTML = `
           <td class="px-3 py-2 mono align-top">${g.id ?? ''}</td>
           <td class="px-3 py-2 align-top">${g.name ?? ''}${nameCellMobileLink}</td>
           <td class="px-3 py-2 align-top">${formatType(g.invitation_type) ?? ''}</td>
           <td class="px-3 py-2 align-top">${formatRelation(g.relation) ?? ''}</td>
-          <td class="px-3 py-2 hidden md:table-cell align-top">
-            <a href="${link}" target="_blank" class="text-blue-600 underline break-all">${link}</a>
-          </td>
+          <td class="px-3 py-2 hidden md:table-cell align-top"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">${link}</a></td>
           <td class="px-3 py-2 align-top w-48">
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full">
               <button class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow w-full sm:w-auto" data-action="copy-link">Copy Link</button>
@@ -149,39 +156,71 @@
         copyWABtn.addEventListener('click', () => { navigator.clipboard.writeText(waText).then(()=>showToast('Message copied')); });
       });
       countChip.textContent = `${list.length} guest${list.length !== 1 ? 's' : ''}`;
+    });
+        });
+      });
+      countChip.textContent = `${list.length} guest${list.length !== 1 ? 's' : ''}`;
     }
 
     function applySearch(all) {
       const q = searchInput.value.trim().toLowerCase();
-      const filtered = !q ? all : all.filter(g =>
-        String(g.id).toLowerCase().includes(q) ||
-        (g.name||'').toLowerCase().includes(q) ||
-        (g.invitation_type||'').toLowerCase().includes(q) ||
-        (g.relation||'').toLowerCase().includes(q)
-      );
+      let filtered = all || [];
+      if (activeRelFilter) {
+        filtered = filtered.filter(g => String(g.relation||'').toLowerCase() === activeRelFilter);
+      }
+      if (q) {
+        filtered = filtered.filter(g =>
+          String(g.id).toLowerCase().includes(q) ||
+          (g.name||'').toLowerCase().includes(q) ||
+          (g.invitation_type||'').toLowerCase().includes(q) ||
+          (g.relation||'').toLowerCase().includes(q)
+        );
+      }
       renderRows(filtered);
     }
 
-    // ===== Load CSV =====
     fetch(`${CSV_PATH}?v=${Date.now()}`, { cache: 'no-cache' })
-      .then(res => res.ok ? res.text() : Promise.reject(new Error('CSV fetch failed ' + res.status)))
+      .then(res => res.text())
       .then(text => {
-        const parsed = Papa.parse(text, { header:true, skipEmptyLines:true, transformHeader: h => h.replace(/\ufeff/g,'').trim() });
+        const parsed = Papa.parse(text, { header:true, skipEmptyLines:true, transformHeader: h => h.replace(/\ufeff/g,'') });
         const rows = parsed.data || [];
         const guests = rows.map(r => ({
           id: r.id,
           name: r.name,
           invitation_type: r.invitation_type,
-          relation: r.relation
+          relation: r.relation,
+          message: buildMessage(r)
         })).filter(g => g.id && g.name);
         window.ALL = guests;
         applySearch(guests);
-      })
-      .catch(err => { console.error(err); showToast('Failed to load CSV'); renderRows([]); });
+      });
 
-    // ===== Search =====
     searchInput.addEventListener('input', ()=>applySearch(window.ALL || []));
-  </script>
 
+    function buildMessage(g) {
+      const url = buildLink(g);
+      const name = g.name;
+      const type = g.invitation_type;
+      let msg = '';
+      if(type==='holy_matrimony'){
+        msg = `Dear ${name},\n\nWith hearts full of gratitude, we joyfully share the blessing that our beloved son\n\nVincentius Alfon Lavinski\nSon of Mr. Rudy Susanto Sudjono & Mrs. Yosefin Paulina Sim,\n\nwill soon unite in holy matrimony with\n\nEugenia Abigail Cindy Citrasari\nDaughter of Mr. Niketius Hony Surjono & Mrs. Auxillia Monika Pariva,\n\n📅 Saturday, 27 September 2025\n🕕 12:00 WIB\n📍 Gereja St. Andreas Kim Tae-gon, Kelapa Gading, Jakarta Utara\n\nIt would mean the world to us if you could join in this moment of joy,\nto witness their vows and shower them with your prayers.\n\nKindly confirm your attendance through the link below before ${DUE}\n${url}\n\nYour presence is not only an honor, but also a precious gift to our family.\n\nWith love and gratitude,\n${regardsFor(g.relation, type)}`;
+      } else {
+        msg = `Dear ${name},\n\nWith grateful hearts and joyful spirits,\nwe invite you to an evening of celebration honoring the marriage of\n\nAlfon Lavinski\nSon of Mr. Rudy Susanto Sudjono & Yosefin Paulina Sim\n\nAnd\n\nEugenia Cindy Citrasari\nDaughter of Mr. Hony Surjono & Mrs. Monika Pariva.\n\n📅 Saturday, 27 September 2025\n🕖 19:00 WIB\n📍 Gran Mahakam Hotel, Magnolia Ballroom\n\nMay this night be filled with warmth, laughter, and treasured memories,\nmade even more special by your presence.\n\nKindly confirm your attendance through the link below before ${DUE}:\n${url}\n\nWarm Regards,\n${regardsFor(g.relation, type)}`;
+      }
+      return msg;
+    }
+
+    function regardsFor(rel, type){
+      const r = String(rel||'').toLowerCase();
+      if(r==='alfon_parent_relation') return `Rudy Susanto Sudjono & Yosefin Paulina Sim\n(the proud parents of the groom)`;
+      if(r==='cindy_parent_relation'){
+        return type==='holy_matrimony'
+          ? `Niketius Hony Surjono & Auxillia Monika Pariva\n(the proud parents of the bride)`
+          : `Hony Surjono & Monika Pariva\n(the proud parents of the bride)`;
+      }
+      if(r==='alfon_relation'||r==='cindy_relation') return 'Alfon & Cindy';
+      return 'Alfon & Cindy';
+    }
+  </script>
 </body>
 </html>
