@@ -10,7 +10,7 @@
 <body class="bg-gray-50 text-gray-900 min-h-screen">
   <div class="max-w-5xl mx-auto p-4 sm:p-6">
     <!-- Header -->
-    <header class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+    <header class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-3">
       <div>
         <h1 class="text-2xl font-semibold">Guest List Clipboard Helper</h1>
         <p class="text-sm text-gray-600">One-click copy for invitation links & messages.</p>
@@ -21,17 +21,13 @@
       </div>
     </header>
 
-    <!-- Config (read-only) -->
-    <!-- <section class="mb-4">
-      <div class="bg-white border rounded-2xl p-4 shadow-sm text-sm text-gray-700">
-        <div class="flex flex-wrap gap-x-6 gap-y-2">
-          <div>Base URL: <code id="cfgBaseUrl"></code></div>
-          <div>Due date: <code id="cfgDue"></code></div>
-          <div>CSV file: <code>guest_rows.csv</code></div>
-        </div>
-        <p class="text-xs text-gray-500 mt-1">Push a new <code>guest_rows.csv</code> to the repo to update the list.</p>
-      </div>
-    </section> -->
+    <!-- Nav -->
+    <nav class="mb-4">
+      <ul class="flex flex-wrap gap-2 text-sm">
+        <li><a href="index.html" class="px-3 py-1.5 rounded-lg bg-blue-600 text-white font-medium">Guests</a></li>
+        <li><a href="report.html" class="px-3 py-1.5 rounded-lg bg-white border hover:bg-gray-50">Report</a></li>
+      </ul>
+    </nav>
 
     <!-- Quick Filters -->
     <section class="mb-4">
@@ -75,13 +71,6 @@
     const DUE = '7th September 2025';
     const CSV_PATH = 'guest_rows.csv';
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const baseEl = document.getElementById('cfgBaseUrl');
-      const dueEl  = document.getElementById('cfgDue');
-      if (baseEl) baseEl.textContent = BASE_URL;
-      if (dueEl)  dueEl.textContent  = DUE;
-    });
-
     // ===== Maps & formatters =====
     const RELATION_MAP = {
       'alfon_parent_relation': "Alfon's Parent",
@@ -94,13 +83,13 @@
     const formatRelation = (r) => RELATION_MAP[r] || (r ? r.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '');
     const formatType = (t) => TYPE_MAP[t] || (t ? t.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '');
 
-    // ===== DOM helpers =====
+    // ===== DOM =====
     const $ = sel => document.querySelector(sel);
     const tbody = $('#tbody');
     const searchInput = $('#searchInput');
     const countChip = $('#countChip');
 
-    // ===== Toast & Copy helpers =====
+    // ===== Toast & Copy =====
     function showToast(msg) {
       const el = document.getElementById('toast');
       if (!el) return;
@@ -116,7 +105,7 @@
           await navigator.clipboard.writeText(text);
           return true;
         }
-      } catch (e) { /* fallback below */ }
+      } catch (e) {}
       try {
         const ta = document.createElement('textarea');
         ta.value = text; ta.setAttribute('readonly','');
@@ -231,7 +220,6 @@
     document.querySelectorAll('.rel-chip').forEach(btn => {
       btn.addEventListener('click', () => {
         activeRelFilter = (btn.dataset.rel || '').toLowerCase();
-        // Visual state
         document.querySelectorAll('.rel-chip').forEach(b=>{
           b.classList.remove('border-blue-600','bg-blue-50','text-blue-700');
           b.classList.add('border-gray-300','bg-white','text-gray-700');

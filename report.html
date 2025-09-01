@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invitation Report</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+  <div class="max-w-5xl mx-auto p-4 sm:p-6">
+    <!-- Header -->
+    <header class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-4">
+      <div>
+        <h1 class="text-2xl font-semibold">Invitation Report</h1>
+        <p class="text-sm text-gray-600">Summary of RSVP by invitation type. Data from <code>guest_rows.csv</code>.</p>
+      </div>
+    </header>
+
+    <!-- Nav -->
+    <nav class="mb-4">
+      <ul class="flex flex-wrap gap-2 text-sm">
+        <li>
+          <a href="index.html" class="px-3 py-1.5 rounded-lg bg-white border hover:bg-gray-50">Guests</a>
+        </li>
+        <li>
+          <a href="report.html" class="px-3 py-1.5 rounded-lg bg-blue-600 text-white font-medium">Report</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Filters -->
+    <section class="mb-4">
+      <div class="flex flex-wrap gap-2 items-center">
+        <span class="text-sm text-gray-600">Filter by relation:</span>
+        <button class="rel-chip-report border border-blue-600 bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full text-xs" data-rel="">All</button>
+        <button class="rel-chip-report border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="alfon_relation">Alfon</button>
+        <button class="rel-chip-report border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="cindy_relation">Cindy</button>
+        <button class="rel-chip-report border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="alfon_parent_relation">Alfon's Parent</button>
+        <button class="rel-chip-report border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rel="cindy_parent_relation">Cindy's Parent</button>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-white border rounded-2xl p-4 shadow-sm">
+        <h3 class="font-semibold mb-2">Reception</h3>
+        <div class="flex gap-6 text-sm">
+          <div><div class="text-gray-500">Coming</div><div id="rec-coming" class="text-2xl font-bold">0</div></div>
+          <div><div class="text-gray-500">Not Coming</div><div id="rec-not" class="text-2xl font-bold">0</div></div>
+          <div><div class="text-gray-500">No Respond</div><div id="rec-none" class="text-2xl font-bold">0</div></div>
+        </div>
+      </div>
+      <div class="bg-white border rounded-2xl p-4 shadow-sm">
+        <h3 class="font-semibold mb-2">Holy Matrimony</h3>
+        <div class="flex gap-6 text-sm">
+          <div><div class="text-gray-500">Coming</div><div id="hm-coming" class="text-2xl font-bold">0</div></div>
+          <div><div class="text-gray-500">Not Coming</div><div id="hm-not" class="text-2xl font-bold">0</div></div>
+          <div><div class="text-gray-500">No Respond</div><div id="hm-none" class="text-2xl font-bold">0</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chart -->
+    <section class="bg-white border rounded-2xl p-4 shadow-sm">
+      <h3 class="font-semibold mb-2">RSVP by Invitation Type</h3>
+      <div class="h-64"><canvas id="rsvpChart"></canvas></div>
+    </section>
+  </div>
+
+  <script>
+    const CSV_PATH = 'guest_rows.csv';
+
+    // Mapping helpers for display (match your main page)
+    const RELATION_MAP = {
+      'alfon_parent_relation': "Alfon's Parent",
+      'cindy_parent_relation': "Cindy's Parent",
+      'alfon_relation': 'Alfon',
+      'cindy_relation': 'Cindy'
+    };
+    const TYPE_MAP = { 'reception': 'Reception', 'holy_matrimony': 'Holy Matrimony' };
+
+    // State
+    let ALL = [];
+    let activeRelFilterReport = '';
+    let chartRef = null;
+
+    function normStatus(s){
+      const v = String(s||'').toLowerCase().trim();
+      if (['coming','attending','yes','confirmed','datang'].includes(v)) return 'coming';
+      if (['not_coming','not coming','declined','no','tidak datang','ga dateng','gak datang'].includes(v)) return 'not_coming';
+      return 'no_respond';
+    }
+
+    function computeStats(list){
+      const init = { coming:0, not_coming:0, no_respond:0 };
+      const stats = {
+        reception: { ...init },
+        holy_matrimony: { ...init },
+      };
+      list.forEach(g => {
+        const type = String(g.invitation_type||'').toLowerCase();
+        const st = normStatus(g.rsvp_status);
+        if (type === 'reception' || type === 'holy_matrimony') {
+          stats[type][st]++;
+        }
+      });
+      return stats;
+    }
+
+    function renderReport(){
+      let list = [...ALL];
+      if (activeRelFilterReport) {
+        list = list.filter(g => String(g.relation||'').toLowerCase() === activeRelFilterReport);
+      }
+      const s = computeStats(list);
+
+      // Update cards
+      document.getElementById('rec-coming').textContent = s.reception.coming;
+      document.getElementById('rec-not').textContent    = s.reception.not_coming;
+      document.getElementById('rec-none').textContent   = s.reception.no_respond;
+      document.getElementById('hm-coming').textContent  = s.holy_matrimony.coming;
+      document.getElementById('hm-not').textContent     = s.holy_matrimony.not_coming;
+      document.getElementById('hm-none').textContent    = s.holy_matrimony.no_respond;
+
+      // Chart
+      const labels = ['Reception','Holy Matrimony'];
+      const coming = [s.reception.coming, s.holy_matrimony.coming];
+      const notComing = [s.reception.not_coming, s.holy_matrimony.not_coming];
+      const noRespond = [s.reception.no_respond, s.holy_matrimony.no_respond];
+
+      const data = { labels, datasets: [
+        { label: 'Coming', data: coming },
+        { label: 'Not Coming', data: notComing },
+        { label: 'No Respond', data: noRespond },
+      ]};
+      const options = { responsive:true, maintainAspectRatio:false, scales:{ y:{ beginAtZero:true, ticks:{ precision:0 } } } };
+
+      const ctx = document.getElementById('rsvpChart').getContext('2d');
+      if (chartRef) { chartRef.data = data; chartRef.update(); }
+      else { chartRef = new Chart(ctx, { type:'bar', data, options }); }
+    }
+
+    // Relation chips wiring
+    document.addEventListener('click', (e)=>{
+      const btn = e.target.closest('.rel-chip-report');
+      if (!btn) return;
+      activeRelFilterReport = (btn.dataset.rel || '').toLowerCase();
+      document.querySelectorAll('.rel-chip-report').forEach(b=>{
+        b.classList.remove('border-blue-600','bg-blue-50','text-blue-700');
+        b.classList.add('border-gray-300','bg-white','text-gray-700');
+      });
+      btn.classList.remove('border-gray-300','bg-white','text-gray-700');
+      btn.classList.add('border-blue-600','bg-blue-50','text-blue-700');
+      renderReport();
+    });
+
+    // Load CSV
+    fetch(`${CSV_PATH}?v=${Date.now()}`, { cache: 'no-cache' })
+      .then(res => res.ok ? res.text() : Promise.reject(new Error('CSV fetch failed ' + res.status)))
+      .then(text => {
+        const parsed = Papa.parse(text, { header:true, skipEmptyLines:true, transformHeader: h => h.replace(/\ufeff/g,'').trim() });
+        const rows = parsed.data || [];
+        ALL = rows.map(r => ({
+          id: r.id,
+          name: r.name,
+          invitation_type: r.invitation_type,
+          relation: r.relation,
+          rsvp_status: r.rsvp_status || r.rsvp || ''
+        })).filter(g => g.id && g.name);
+        renderReport();
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Failed to load CSV');
+      });
+  </script>
+</body>
+</html>
