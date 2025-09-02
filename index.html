@@ -230,9 +230,13 @@
       })
       .catch(err => { console.error(err); showToast('Failed to load CSV'); renderRows([]); });
 
-    // ===== Search input =====
+    // ===== Search input (debounced) =====
+    function debounce(fn, ms=200){
+      let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), ms); };
+    }
     if (searchInput) {
-      searchInput.addEventListener('input', ()=>applySearch(window.ALL || []));
+      const run = debounce(()=>applySearch(window.ALL || []), 150);
+      searchInput.addEventListener('input', run);
     }
 
     // ===== Quick relation filter =====
