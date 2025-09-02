@@ -185,10 +185,12 @@
         tr.className = 'border-t align-top';
         const link = buildLink(g);
         const waText = buildMessage(g);
-        const nameCellMobileLink = `<div class="md:hidden mt-2"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">Open link</a></div>`;
+        // const nameCellMobileLink = `<div class="md:hidden mt-2"><a href="${link}" target="_blank" class="text-blue-600 underline break-all">Open link</a></div>`;
         tr.innerHTML = `
           <td class="px-3 py-2 align-top tabular-nums">${g.id ?? ''}</td>
-          <td class="px-3 py-2 align-top">${g.name ?? ''}${nameCellMobileLink}</td>
+          <td class="px-3 py-2 align-top">
+            <a href="${link}" target="_blank" class="text-blue-600 underline">${g.name ?? ''}</a>
+          </td>
           <td class="px-3 py-2 align-top">${formatType(g.invitation_type) ?? ''}</td>
           <td class="px-3 py-2 align-top">${formatRelation(g.relation) ?? ''}</td>
           <td class="px-3 py-2 align-top">${statusLabel(g)}</td>
