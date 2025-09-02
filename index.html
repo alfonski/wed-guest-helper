@@ -193,15 +193,15 @@
           <td class="px-3 py-2 align-top">
             <a href="${link}" target="_blank" class="text-blue-600 underline">${g.name ?? ''}</a>
           </td>
-          <td class="px-3 py-2 align-top">${formatType(g.invitation_type) ?? ''}</td>
-          <td class="px-3 py-2 align-top">${formatRelation(g.relation) ?? ''}</td>
-          <td class="px-3 py-2 align-top">${statusLabel(g)}</td>
           <td class="px-3 py-2 align-top w-48">
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full">
               <button class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow w-full sm:w-auto" data-action="copy-link">Copy Link</button>
               <button class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow w-full sm:w-auto" data-action="copy-wa">Copy WA Message</button>
             </div>
-          </td>`;
+          </td>
+          <td class="px-3 py-2 align-top">${formatType(g.invitation_type) ?? ''}</td>
+          <td class="px-3 py-2 align-top">${formatRelation(g.relation) ?? ''}</td>
+          <td class="px-3 py-2 align-top">${statusLabel(g)}</td>`;
         tbody.appendChild(tr);
         const [copyLinkBtn, copyWABtn] = tr.querySelectorAll('button');
         copyLinkBtn.addEventListener('click', async () => {
