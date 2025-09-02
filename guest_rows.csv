@@ -1,11 +1,4 @@
 id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,wishes,relation
-4001,Cen Pet Kiun,reception,,no_respond,,2025-09-02 05:53:46.96+00,,alfon_parent_relation
-4002,Phang San Fo,reception,,no_respond,,2025-09-02 05:54:23.474+00,,alfon_parent_relation
-4003,Phang Jiu Song,reception,,no_respond,,2025-08-28 13:33:39.580668+00,,alfon_parent_relation
-4004,Phang Sun Thien,reception,,no_respond,,2025-08-28 13:34:01.546037+00,,alfon_parent_relation
-4005,Ahon,reception,,no_respond,,2025-08-28 13:36:05.006573+00,,alfon_parent_relation
-4006,Liao Aciap,reception,,no_respond,,2025-08-28 13:36:27.335082+00,,alfon_parent_relation
-4007,Agustaaf,reception,,no_respond,,2025-08-28 13:36:51.248339+00,,alfon_parent_relation
 5001,Cen Pet Kiun & Ny.,reception,,no_respond,,2025-08-31 09:07:28.720645+00,,alfon_parent_relation
 5002,Phang San Fo & Ny.,reception,,no_respond,,2025-08-31 09:07:28.720645+00,,alfon_parent_relation
 5003,Phang Jiu Song,reception,,no_respond,,2025-08-31 09:07:28.720645+00,,alfon_parent_relation
