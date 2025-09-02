@@ -50,6 +50,7 @@
           <div><div class="text-gray-500">Coming</div><div id="rec-coming" class="text-2xl font-bold">0</div></div>
           <div><div class="text-gray-500">Not Coming</div><div id="rec-not" class="text-2xl font-bold">0</div></div>
           <div><div class="text-gray-500">No Respond</div><div id="rec-none" class="text-2xl font-bold">0</div></div>
+          <div><div class="text-gray-500">Total Pax</div><div id="rec-coming-pax" class="text-2xl font-bold">0</div></div>
         </div>
       </div>
       <div class="bg-white border rounded-2xl p-4 shadow-sm">
@@ -58,6 +59,7 @@
           <div><div class="text-gray-500">Coming</div><div id="hm-coming" class="text-2xl font-bold">0</div></div>
           <div><div class="text-gray-500">Not Coming</div><div id="hm-not" class="text-2xl font-bold">0</div></div>
           <div><div class="text-gray-500">No Respond</div><div id="hm-none" class="text-2xl font-bold">0</div></div>
+          <div><div class="text-gray-500">Total Pax</div><div id="hm-coming-pax" class="text-2xl font-bold">0</div></div>
         </div>
       </div>
     </section>
@@ -94,7 +96,7 @@
     }
 
     function computeStats(list){
-      const init = { coming:0, not_coming:0, no_respond:0 };
+      const init = { coming:0, not_coming:0, no_respond:0, coming_pax:0 };
       const stats = {
         reception: { ...init },
         holy_matrimony: { ...init },
@@ -104,6 +106,7 @@
         const st = normStatus(g.rsvp_status);
         if (type === 'reception' || type === 'holy_matrimony') {
           stats[type][st]++;
+          if (st === 'coming') stats[type].coming_pax += pax;
         }
       });
       return stats;
@@ -123,6 +126,9 @@
       document.getElementById('hm-coming').textContent  = s.holy_matrimony.coming;
       document.getElementById('hm-not').textContent     = s.holy_matrimony.not_coming;
       document.getElementById('hm-none').textContent    = s.holy_matrimony.no_respond;
+      document.getElementById('rec-coming-pax').textContent = s.reception.coming_pax;
+      document.getElementById('hm-coming-pax').textContent = s.holy_matrimony.coming_pax;
+
 
       // Chart
       const labels = ['Reception','Holy Matrimony'];
@@ -167,7 +173,8 @@
           name: r.name,
           invitation_type: r.invitation_type,
           relation: r.relation,
-          rsvp_status: r.rsvp_status || r.rsvp || ''
+          rsvp_status: r.rsvp_status || r.rsvp || '',
+          rsvp_pax: r.rsvp_pax || '0'
         })).filter(g => g.id && g.name);
         renderReport();
       })
