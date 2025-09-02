@@ -1,0 +1,50 @@
+name: Sync Guests CSV
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 17 * * *" # daily at 00:00 Asia/Jakarta
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      OUT_FILE: guest_rows.csv
+      SELECT: "id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch CSV from Supabase (guest table)
+        run: |
+          mkdir -p "$(dirname "$OUT_FILE")"
+          curl -sS --get "${SUPABASE_URL}/rest/v1/guest" \
+            -H "apikey: ${SUPABASE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_KEY}" \
+            -H "Accept: text/csv" \
+            --data-urlencode "select=${SELECT}" \
+            --compressed \
+            -o "$OUT_FILE"
+
+      - name: Show first lines (debug)
+        run: head -n 5 "$OUT_FILE" || true
+
+      - name: Check if file changed
+        id: git-check
+        run: |
+          if git diff --quiet --exit-code -- "$OUT_FILE"; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit if changed
+        if: steps.git-check.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): sync guests CSV from Supabase"
+          file_pattern: ${{ env.OUT_FILE }}
