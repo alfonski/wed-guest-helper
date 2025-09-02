@@ -104,6 +104,7 @@
       list.forEach(g => {
         const type = String(g.invitation_type||'').toLowerCase();
         const st = normStatus(g.rsvp_status);
+        const pax = Number(g.rsvp_pax) || 0; 
         if (type === 'reception' || type === 'holy_matrimony') {
           stats[type][st]++;
           if (st === 'coming') stats[type].coming_pax += pax;
