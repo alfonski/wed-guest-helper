@@ -47,6 +47,13 @@
         <button class="rsvp-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rsvp="not_coming">Not Coming</button>
         <button class="rsvp-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-rsvp="no_respond">No Respond</button>
       </div>
+      <!-- Invitation Filter Chips -->
+      <div class="flex flex-wrap gap-2 items-center mt-2">
+        <span class="text-sm text-gray-600">Invitation:</span>
+        <button class="inv-to-chip border border-blue-600 bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full text-xs" data-inv="">All</button>
+        <button class="inv-to-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-inv="reception">Reception</button>
+        <button class="inv-to-chip border border-gray-300 bg-white text-gray-700 px-2.5 py-1 rounded-full text-xs" data-inv="holy_matrimony">Holy Matrimony</button>
+      </div>
     </section>
 
     <!-- Table -->
@@ -205,6 +212,7 @@
 
     let activeRelFilter = '';
     let activeRSVPFilter = '';
+    let activeInvFilter = '';
 
     function applySearch(all) {
       const q = (searchInput?.value || '').trim().toLowerCase();
@@ -214,6 +222,9 @@
       }
       if (activeRSVPFilter) {
         filtered = filtered.filter(g => String(g.rsvp_status||'').toLowerCase() === activeRSVPFilter);
+      }
+      if (activeInvFilter) {
+        filtered = filtered.filter(g => String(g.invitation_type||'').toLowerCase() === activeInvFilter);
       }
       if (q) {
         filtered = filtered.filter(g =>
@@ -272,6 +283,20 @@
       btn.addEventListener('click', () => {
         activeRSVPFilter = (btn.dataset.rsvp || '').toLowerCase();
         document.querySelectorAll('.rsvp-chip').forEach(b=>{
+          b.classList.remove('border-blue-600','bg-blue-50','text-blue-700');
+          b.classList.add('border-gray-300','bg-white','text-gray-700');
+        });
+        btn.classList.remove('border-gray-300','bg-white','text-gray-700');
+        btn.classList.add('border-blue-600','bg-blue-50','text-blue-700');
+        applySearch(window.ALL || []);
+      });
+    });
+
+    // Invitation To filter
+    document.querySelectorAll('.inv-to-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeInvFilter = (btn.dataset.inv || '').toLowerCase();
+        document.querySelectorAll('.inv-to-chip').forEach(b=>{
           b.classList.remove('border-blue-600','bg-blue-50','text-blue-700');
           b.classList.add('border-gray-300','bg-white','text-gray-700');
         });
