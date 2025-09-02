@@ -70,6 +70,7 @@
               <th class="px-3 py-2 font-medium">Type</th>
               <th class="px-3 py-2 font-medium">Relation</th>
               <th class="px-3 py-2 font-medium">RSVP</th>
+              <th class="px-3 py-2 font-medium">Reserved Pax</th>
             </tr>
           </thead>
           <tbody id="tbody"></tbody>
@@ -201,7 +202,8 @@
           </td>
           <td class="px-3 py-2 align-top">${formatType(g.invitation_type) ?? ''}</td>
           <td class="px-3 py-2 align-top">${formatRelation(g.relation) ?? ''}</td>
-          <td class="px-3 py-2 align-top">${statusLabel(g)}</td>`;
+          <td class="px-3 py-2 align-top">${statusLabel(g)}</td>
+          <td class="px-3 py-2 align-top">${g.rsvp_pax ?? '0'}</td>`;
         tbody.appendChild(tr);
         const [copyLinkBtn, copyWABtn] = tr.querySelectorAll('button');
         copyLinkBtn.addEventListener('click', async () => {
@@ -252,7 +254,8 @@
           name: r.name,
           invitation_type: r.invitation_type,
           relation: r.relation,
-          rsvp_status: r.rsvp_status
+          rsvp_status: r.rsvp_status,
+          rsvp_pax: r.rsvp_pax || '0'
         })).filter(g => g.id && g.name);
         window.ALL = guests;
         applySearch(guests);
