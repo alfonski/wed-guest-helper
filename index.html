@@ -253,6 +253,15 @@
         applySearch(window.ALL || []);
       });
     });
+
+    // Focus search with Cmd/Ctrl + K
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        searchInput?.focus();
+        searchInput?.select();
+      }
+    });
   </script>
 </body>
 </html>
