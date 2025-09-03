@@ -1,6 +1,4 @@
 id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,wishes,relation
-1,Andreas Goh,holy_matrimony,2,no_respond,,2025-09-02 05:22:42.997388+00,,alfon_relation
-2,Erica Delfinia,reception,2,no_respond,,2025-09-02 10:21:52.032+00,,alfon_relation
 901,Hony Surjono,reception,1,no_respond,,2025-09-02 05:49:21.39+00,,cindy_parent_relation
 902,Monika Pariva,reception,2,no_respond,,2025-09-02 05:06:37.806498+00,,cindy_parent_relation
 903,G. Tjiomas dan Yenny,reception,2,no_respond,,2025-09-02 05:06:37.806498+00,,cindy_parent_relation
