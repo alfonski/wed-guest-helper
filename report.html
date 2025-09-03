@@ -72,7 +72,8 @@
   </div>
 
   <script>
-    const CSV_PATH = 'guest_rows.csv';
+    const isStaging = window.location.search.includes('staging=true');
+    const CSV_PATH = isStaging ? 'guest_staging_rows.csv' : 'guest_rows.csv';
 
     // Mapping helpers for display (match your main page)
     const RELATION_MAP = {
