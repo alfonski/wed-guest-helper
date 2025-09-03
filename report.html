@@ -75,6 +75,7 @@
     const isStaging = window.location.search.includes('staging=true');
     const CSV_PATH = isStaging ? 'guest_staging_rows.csv' : 'guest_rows.csv';
 
+    const navSuffix = isStaging ? '?staging=true' : '';
     document.addEventListener('DOMContentLoaded', () => {
       // Update navigation links with staging query if needed
       document.querySelectorAll('nav a').forEach(a => {

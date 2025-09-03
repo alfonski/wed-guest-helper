@@ -88,6 +88,19 @@
     const DUE = '7th September 2025';
     const CSV_PATH = isStaging ? 'guest_staging_rows.csv' : 'guest_rows.csv';
 
+    const navSuffix = isStaging ? '?staging=true' : '';
+    document.addEventListener('DOMContentLoaded', () => {
+      // Update navigation links with staging query if needed
+      document.querySelectorAll('nav a').forEach(a => {
+        const href = a.getAttribute('href');
+        if (href) {
+          // Remove any existing ?staging=true to avoid duplicates
+          const cleanHref = href.replace(/\?staging=true$/, '');
+          a.setAttribute('href', cleanHref + navSuffix);
+        }
+      });
+    });
+
     // ===== Maps & formatters =====
     const RELATION_MAP = {
       'alfon_parent_relation': "Alfon's Parent",
