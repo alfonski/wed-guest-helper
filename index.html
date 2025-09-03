@@ -94,9 +94,18 @@
       document.querySelectorAll('nav a').forEach(a => {
         const href = a.getAttribute('href');
         if (href) {
-          // Remove any existing ?staging=true to avoid duplicates
-          const cleanHref = href.replace(/\?staging=true$/, '');
-          a.setAttribute('href', cleanHref + navSuffix);
+          // Remove any existing ?staging=true or &staging=true to avoid duplicates
+          const cleanHref = href.replace(/(\?|&)staging=true/, '');
+          // Add navSuffix correctly, preserving other query params
+          if (navSuffix) {
+            if (cleanHref.includes('?')) {
+              a.setAttribute('href', cleanHref + '&staging=true');
+            } else {
+              a.setAttribute('href', cleanHref + navSuffix);
+            }
+          } else {
+            a.setAttribute('href', cleanHref);
+          }
         }
       });
     });
