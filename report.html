@@ -77,22 +77,17 @@
 
     const navSuffix = isStaging ? '?staging=true' : '';
     document.addEventListener('DOMContentLoaded', () => {
-      // Update navigation links with staging query if needed
       document.querySelectorAll('nav a').forEach(a => {
         const href = a.getAttribute('href');
         if (href) {
-          // Remove any existing ?staging=true or &staging=true to avoid duplicates
-          const cleanHref = href.replace(/(\?|&)staging=true/, '');
-          // Add navSuffix correctly, preserving other query params
-          if (navSuffix) {
-            if (cleanHref.includes('?')) {
-              a.setAttribute('href', cleanHref + '&staging=true');
-            } else {
-              a.setAttribute('href', cleanHref + navSuffix);
-            }
-          } else {
-            a.setAttribute('href', cleanHref);
+          // Remove any existing staging=true from the href
+          let url = new URL(href, window.location.origin);
+          url.searchParams.delete('staging');
+          // If current page is staging, add it
+          if (isStaging) {
+            url.searchParams.append('staging', 'true');
           }
+          a.setAttribute('href', url.pathname + (url.search ? url.search : ''));
         }
       });
     });
