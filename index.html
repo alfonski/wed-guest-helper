@@ -83,9 +83,10 @@
 
   <script>
     // ===== CONFIG =====
-    const BASE_URL = 'https://www.alfoncindy.site';
+    const isStaging = window.location.search.includes('staging=true');
+    const BASE_URL = isStaging ? 'https://staging.alfoncindy.site' : 'https://www.alfoncindy.site';
     const DUE = '7th September 2025';
-    const CSV_PATH = 'guest_rows.csv';
+    const CSV_PATH = isStaging ? 'guest_staging_rows.csv' : 'guest_rows.csv';
 
     // ===== Maps & formatters =====
     const RELATION_MAP = {
