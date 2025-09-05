@@ -28,7 +28,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6001,Melany,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6002,Herawati,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6005,Merry,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
-6010,Lintang,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6012,Celly,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6013,Erni,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6014,Hera,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
@@ -59,3 +58,5 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6030,"Farid Sendjaja & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6034,Zizil,reception,,no_respond,,"2025-09-05 05:55:39.72649+00",alfon_parent_relation
 6011,Meilan,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
+6010,Lintang,reception,,coming,1,"2025-09-05 06:15:00.5+00",alfon_parent_relation
+6035,Lia,reception,,no_respond,,"2025-09-05 07:02:37.494965+00",alfon_parent_relation
