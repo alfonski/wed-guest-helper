@@ -6,24 +6,24 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 5007,"Agustaaf & Ny.",reception,,coming,2,"2025-09-02 13:34:59.448+00",alfon_parent_relation
 5011,"Afuk & Ny.",reception,,coming,2,"2025-09-02 14:50:25.554+00",alfon_parent_relation
 5006,"Liau Aciap & Ny.",reception,,coming,2,"2025-09-03 03:51:00.416+00",alfon_parent_relation
-5002,"Phang San Fo & Ny.",reception,,coming,5,"2025-09-02 07:30:26.929+00",alfon_parent_relation
+5002,"Phang San Fo & Ny.",reception,,coming,4,"2025-09-02 07:30:26.929+00",alfon_parent_relation
+5014,"Ashin & Ny.",reception,,coming,3,"2025-09-02 08:29:39.978+00",alfon_parent_relation
+5024,"Hengky & Ny.",reception,,coming,3,"2025-09-02 09:13:57.346+00",alfon_parent_relation
+5013,Yenfa,reception,,coming,1,"2025-09-05 05:38:04.055+00",alfon_parent_relation
+5010,"Phang Bong Sui",reception,,coming,1,"2025-09-05 05:38:23.974+00",alfon_parent_relation
+5022,"Andri & Ny.",reception,,coming,2,"2025-09-02 09:23:02.67+00",alfon_parent_relation
 5012,"Pit Sen & Ny.",reception,,coming,2,"2025-09-02 08:20:04.342+00",alfon_parent_relation
-5013,Yenfa,reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
-5014,"Ashin & Ny.",reception,,coming,4,"2025-09-02 08:29:39.978+00",alfon_parent_relation
 5008,"Akiun & Ny.",reception,,coming,2,"2025-09-02 08:44:47.365+00",alfon_parent_relation
 5020,"Ng Liung Sen & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5019,Lalan,reception,,coming,3,"2025-09-02 09:01:04.246+00",alfon_parent_relation
 8888,"Verent Nathalia",reception,2,no_respond,,"2025-08-31 02:17:54.693035+00",alfon_relation
 5003,"Phang Jiu Song",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5004,"Phang Sun Thien & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
-5010,"Phang Bong Sui",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5016,Asiong,reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5018,"Iyus & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5021,"Tjhang Bui Khiong & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5023,"Djie Sak Tjong & Ny.",reception,,coming,4,"2025-09-02 09:05:24.629+00",alfon_parent_relation
-5024,"Hengky & Ny.",reception,,coming,4,"2025-09-02 09:13:57.346+00",alfon_parent_relation
 5001,"Cen Pet Kiun & Ny.",reception,,coming,5,"2025-09-02 09:16:00.869+00",alfon_parent_relation
-5022,"Andri & Ny.",reception,,coming,3,"2025-09-02 09:23:02.67+00",alfon_parent_relation
 5017,"Benny Darmawan & Ny.",reception,,coming,2,"2025-09-02 09:28:48.814+00",alfon_parent_relation
 6001,Melany,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6002,Herawati,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
@@ -47,7 +47,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6026,Yeni,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6027,Yunita,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6029,"Yosep & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
-6030,"Farid Sendjaya & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6031,"Aseng & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 5026,"Sakkhi & Ny.",reception,,coming,2,"2025-09-02 09:37:47.741+00",alfon_parent_relation
 6033,Foku,reception,,no_respond,,"2025-09-02 15:06:21.104365+00",alfon_parent_relation
@@ -58,3 +57,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6007,"Yudiono Yunawan & Ny.",reception,,coming,2,"2025-09-04 16:06:05.057+00",alfon_parent_relation
 6003,Iva,reception,,coming,1,"2025-09-05 01:35:09.521+00",alfon_parent_relation
 6008,"Hiu Djan Bie & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
+6030,"Farid Sendjaja & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
