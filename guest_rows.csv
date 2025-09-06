@@ -28,18 +28,15 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6001,Melany,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6002,Herawati,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6005,Merry,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
-6012,Celly,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6013,Erni,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6014,Hera,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6015,Ieng,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6018,Liho,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6019,Mike,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6020,Nita,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
-6021,Yeye,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6022,Rusiana,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6023,Sufi,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6025,Wanwan,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
-6026,Yeni,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6027,Yunita,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6029,"Yosep & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 5026,"Sakkhi & Ny.",reception,,coming,2,"2025-09-02 09:37:47.741+00",alfon_parent_relation
@@ -47,11 +44,14 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6032,"Aleng & Ny.",reception,,no_respond,,"2025-09-02 15:05:42.125305+00",alfon_parent_relation
 6016,Kristin,reception,,coming,1,"2025-09-06 06:30:19.854+00",alfon_parent_relation
 6004,Meli,reception,,coming,1,"2025-09-04 04:38:42.842+00",alfon_parent_relation
+6021,Yeye,reception,,coming,2,"2025-09-06 10:11:26.68+00",alfon_parent_relation
 6028,"Asen & Ny.",reception,,coming,2,"2025-09-04 08:18:38.864+00",alfon_parent_relation
 6009,"Suwandy & Ny.",reception,,coming,2,"2025-09-04 08:41:10.769+00",alfon_parent_relation
+6012,Celly,reception,,coming,2,"2025-09-06 10:18:52.483+00",alfon_parent_relation
 6007,"Yudiono Yunawan & Ny.",reception,,coming,2,"2025-09-04 16:06:05.057+00",alfon_parent_relation
 6003,Iva,reception,,coming,1,"2025-09-05 01:35:09.521+00",alfon_parent_relation
 6008,"Hiu Djan Bie & Ny.",reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
+6026,Yeni,reception,,coming,1,"2025-09-06 11:39:46.298+00",alfon_parent_relation
 6034,Zizil,reception,,no_respond,,"2025-09-05 05:55:39.72649+00",alfon_parent_relation
 6011,Meilan,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6010,Lintang,reception,,coming,1,"2025-09-05 06:15:00.5+00",alfon_parent_relation
