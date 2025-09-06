@@ -60,3 +60,254 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6030,"Farid Sendjaja & Ny.",reception,,coming,2,"2025-09-05 07:35:40.368+00",alfon_parent_relation
 6017,Lanny,reception,,coming,1,"2025-09-05 08:06:10.391+00",alfon_parent_relation
 6024,Susan,reception,,coming,2,"2025-09-05 08:29:54.286+00",alfon_parent_relation
+101,"Suwardi W. & Esther P.",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+102,"Phan Lie Ing & Farah",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+103,"Yusak & Debora",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+104,"Ferry & Hanna",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+105,"Andrew & Lian Lie",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+106,"Joediono Joewono Elena Boenardy",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+107,"Sisca & Lisawati",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+108,"Keluarga Besar - Akoh Han Fie (Ie Sen)",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+109,"Erick P & Yessen",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+110,"Kwok Cau Pang & Fei Cen",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+111,"Kawi Suparto & Yeyen",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+112,"Kwee Tjong Pang & Fun Fun",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+113,"Tjong Soek Kiauw & Kel",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+114,"Keluarga Besar Pakally",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+115,"Keluarga Besar Sri Redjeki",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+116,"Agustinus Sugiharso & Widjajanti Triandjojo",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+117,"Suwandi Suhartono & Sutje Theresia",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+118,"Stephanus Rudi O. & Caecilia Betsy R.",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+119,"Wirawan & Rosita",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+120,"Pdt Daniel & Eni",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+121,"Agus honggo widodo & Vivi Rusli",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+122,"Fredy Willeam & Fenny Cung",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+123,"Paulus Tan & Theofila",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+124,"Theresia & Yoan",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+125,"Prodjo Sunarjanto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+126,"Handiarto & Melly",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+127,"Rudy Lim & Meliani",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+128,"Eka & Veronika",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+129,"Siswanto & Haryati Lukman",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+130,"Agus Susanto & Lis",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+131,"Lili Budiman & Tuti Janti",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+132,"Rico & Evi Mardiana",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+133,"Indra Djaya & Yulia Anastasia",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+134,"Agustinus Gianto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+135,"Toni & Lendy",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+136,"Didi &Yuli Goretti",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+137,"Cik Wawik & Koh Sien Hie",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+138,"Tjan Giok Nio & Keluarga",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+139,"Tjan Swat Nio & Keluarga",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+140,"Budi Susilo dan Nancy Widjajanti Halim",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+141,"Handoko & Vonny WP",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+142,"Amon Fernandes & Maria Theresia Luciana",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+143,"Imma Kumala",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+144,"Jack F.S Tedjo & Kumala Indriati",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+145,"Michael Liem & Jeanne Kim",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+146,"Hartanto Sundjojo",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+147,"Stanley Setianto",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+148,"Silvester Suhodo",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+149,"Siong & Wan Siang",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+150,"Budi Wahono & Istri",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+151,"Yanto dan Mei Lan",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+152,"Ping Hien & Ay Lan",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+153,"Linda Sagita & Hatta",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+154,"Joehanda Lihar & Tien Mestika Suliyanto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+155,"Tommy & Sherly C. Wibowo",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+156,"Eka Yani",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+157,"Sugeng Santoso",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+158,"Hardy Ong",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+159,"David Mardiyanto",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+160,"Rudi Aswin & istri",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+161,"Subiat & istri",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+162,"Herman & Santi",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+163,"King Hwie",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+164,"Haryono & Martha",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+165,"Kris Anggioni & Marina",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+166,"Toni & Resna",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+167,"Natasha dan adiknya",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+168,"Louis Vito",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+169,"Matthew Ronadi",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+170,"Steven Kurniawan",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+501,"G. Tjiomas dan Yenny",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+502,"Lucy Srikiana Sunaryo",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+503,"Widjajanti Hartanu",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+504,"Agustinus Sugiharso",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+505,"Agustono Haliman",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+506,"Sisca Bintonowo",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+507,"Irianto Kurniawan",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+508,"Yuniaty Wanagiri",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+509,"Andreas Limas & Mirna",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+510,"Anwar M. Arif & Sri Wahjoeni",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+511,"Hanche Soewanto",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+512,"Henry Nungtjik",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+513,"Iskandar Widjaja",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+514,"Wong Rudy",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+515,"Martinus Sutrisno D.",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+516,"Stephanus Rudi Oktovianto & Caecilia Betsy Rulien",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+517,Melani,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+518,"Saputra Susanto & Titien",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+519,"lrfan Indra",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+520,"Budi M &  Tina",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+521,"Anita Karmadjaja",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+522,"Frasiskus Xaverius Joto D",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+523,"Yemmy & Wiwiek",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+524,"T.Johannes & Vera",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+525,"Christoforus Halim & Grace",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+526,"Joseph K & Tata",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+527,"Lie So Hun",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+528,"Henni Iriyawati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+529,"Arief Budiman & Liliana Lazuardy",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+530,"Imma Kumala",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+531,"Jack F.S Tedjo & Kumala Indriati",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+532,"Teman Teman APK81",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+533,"Budi Susilo dan Nancy Widjajanti Halim",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+534,Mellysa,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+535,"Lina Ling",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+536,Kyra,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+537,"Yupi & Rini",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+538,Andreas,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+539,"Charles & Deasy",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+540,Nori,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+541,"Tommy & Endang",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+542,"Robby dan Merry Angela",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+543,"Christine Riadiani",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+544,Yani,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+545,"Linda Siuleng",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+546,"Sian Dewi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+547,"Yenny Hera",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+548,"Henny Mei Hua",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+549,Lucia,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+550,Livia,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+551,"Jenny Alyar",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+552,"Sofian Widagdo & Sylvie W.",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+553,"Andi Suryadi & Mina",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+554,"Hugo Santoso & Yeyen",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+555,"Wirawan Saputra & Rosita",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+556,"Stefani Kiat",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+557,"Herawati Wibowo",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+558,"Kindhy & Linda",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+559,"Bahari & Dewi A.",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+560,"Aart Juliadi & Jacqueline",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+561,"Maria Tina",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+562,"Alexander Tejo & Rosana",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+563,"Petrus W.H. & Anastasia",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+564,"R. Indra & Emiliana Yanti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+565,"F.X. Dede & Melly",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+566,Nona,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+567,"Juswanto  Prananto & Elisabeth Elisa",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+568,"Yulius & Oni",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+569,"Henry Kambey",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+570,Yemei,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+571,"Bastian & Yanne D.",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+572,"A. Jeffry & Rita",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+573,"Pin Pin",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+574,"Rismayani Lo.",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+575,"Sian Dewi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+576,"Henry Kambey",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+577,Evita,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+578,"Hanung & Sri Ismiyati",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+579,AmoyLia,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+580,Christine,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+581,"Dewi Tina",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+582,Sance,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+583,"Iron Barata Widjaja",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+584,"David Pangestu & Laura Veronica",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+585,"Albert Steven & Tina",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+586,"Veronica Muliaty",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+587,Nyrnawati,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+588,"Budhi & Fransisca",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+589,"Maria Astrid Sugandi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+590,"Theresia Betty",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+591,"Luciana ",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+592,Kevin,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+593,Theresiana,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+594,"Tedhy Djaya & Baby",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+595,"Dian Savitri",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+596,"Thomas Supit & Herlinawati Wijaya",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+597,"Paulus Tan",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+598,"Jonathan King",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+599,"Susanto Djaja & Fartalya",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+600,"Yoan G.",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+601,Yessica,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+602,"Olivia Feny",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+603,"Cindy Adelia",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+604,"Christine Budiarto",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+605,"Conny Yaputri",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+606,"Connie Tandyo",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+607,Cynthia,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+608,"Brigite Caroline",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+609,"Dessy Anggraini",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+610,"Joseph Aswan  & Erlin",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+611,"Fonita Paula",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+612,"Fanny Karamoy",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+613,"Herlina Setiawati",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+614,"Irene Theresanti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+615,Indrawati,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+616,"Jasinta Damonti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+617,"Vinsensius Chandra & Kintawaty",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+618,"Lieke Hilmi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+619,Lucy,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+620,"Maria Barbier",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+621,"Mariana S",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+622,"Ade Setiawati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+623,"Sri Muliati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+624,"Susy Tanamas",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+625,"Uniawaty Iskandar",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+626,"Vonny Mangindaan",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+627,Yuberty,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+628,"Yudi Hartawan & Oke",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+629,"Kresentia Krisyanti",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+630,"Giawati Budiono",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+631,"Maria Ina Susanti",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+632,"Fenny Setiawati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+633,"widjayanti Agnes",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+634,"Suster Sylviaoliva",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+635,"Suster Cornelia",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+636,"Suster Romana, KFS",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+637,Navy,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+638,"Dewi Hdl Siawidjaja",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+639,"Julita Venansius",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+640,"Diana Teresa",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+641,"Amelia Agus",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+642,Vonny,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+643,"Maria Helmina",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+644,"Peggy Leonardy",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+645,"Loan Tanniadi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+646,"Juanita Laksana",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+647,Hevvy,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+648,"Elizabeth Endang",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+649,Herlina,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+650,"Tinna Gozali",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+651,Rima,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+652,"Anton & Gadis",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+653,Yunike,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+654,"Welly ",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+655,"Anton dan Eva Kartika",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+656,"Tony Ronady dan Elsiyani B",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+657,"Lim Tjoa Tjuan & Lie Hoa",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+658,Hartono,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+659,"Fortuin & Tati",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+660,Lidya,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+661,Eunice,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+662,Eli,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+663,"Linda Andi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+664,Ivone,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+665,Nani,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+666,"Djaja Herjanto dan Retha",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+667,Regina,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+668,Diana,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+669,Maria,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+670,"Sylvie Darmawi",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+671,"Elize dan Robby",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+672,Donny,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+673,"Donny Team - 1",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+674,"Donny Team - 2",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+675,Inowati,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+676,Iwa,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+677,"Handoko & Imei",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+678,"Atiek Widyati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+679,"Maik Wibawa & Anita",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+680,"Andi Wirawan & Lina Yanti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+681,Ismail,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
