@@ -3,7 +3,7 @@ name: Sync Guests CSV
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 17 * * *" # daily at 00:00 Asia/Jakarta
+    - cron: "0 * * * *"
 
 permissions:
   contents: write
