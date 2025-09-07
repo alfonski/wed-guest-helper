@@ -101,7 +101,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 139,"Tjan Swat Nio & Keluarga",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 140,"Budi Susilo dan Nancy Widjajanti Halim",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 141,"Handoko & Vonny WP",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-142,"Amon Fernandes & Maria Theresia Luciana",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 143,"Imma Kumala",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 144,"Jack F.S Tedjo & Kumala Indriati",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 145,"Michael Liem & Jeanne Kim",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -366,3 +365,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7021,"Ambar Dwi Septian & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7022,"Ivan Bagaskara & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 822,Yoora,reception,1,coming,1,"2025-09-07 13:03:36.69+00",cindy_relation
+142,"Amon Fernandes & Maria Theresia Luciana",reception,2,coming,2,"2025-09-07 14:36:23.625+00",cindy_parent_relation
