@@ -13,6 +13,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 5010,"Phang Bong Sui",reception,,coming,1,"2025-09-05 05:38:23.974+00",alfon_parent_relation
 5022,"Andri & Ny.",reception,,coming,2,"2025-09-02 09:23:02.67+00",alfon_parent_relation
 5020,"Ng Liung Sen & Ny.",reception,,coming,4,"2025-09-05 11:33:39.68+00",alfon_parent_relation
+5021,"Tjhang Bui Khiong & Ny.",reception,,coming,2,"2025-09-07 12:50:46.953+00",alfon_parent_relation
 5012,"Pit Sen & Ny.",reception,,coming,2,"2025-09-02 08:20:04.342+00",alfon_parent_relation
 5008,"Akiun & Ny.",reception,,coming,2,"2025-09-02 08:44:47.365+00",alfon_parent_relation
 5019,Lalan,reception,,coming,3,"2025-09-02 09:01:04.246+00",alfon_parent_relation
@@ -21,7 +22,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 5004,"Phang Sun Thien & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5016,Asiong,reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5018,"Iyus & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
-5021,"Tjhang Bui Khiong & Ny.",reception,,no_respond,,"2025-08-31 09:07:28.720645+00",alfon_parent_relation
 5023,"Djie Sak Tjong & Ny.",reception,,coming,4,"2025-09-02 09:05:24.629+00",alfon_parent_relation
 5001,"Cen Pet Kiun & Ny.",reception,,coming,5,"2025-09-02 09:16:00.869+00",alfon_parent_relation
 5017,"Benny Darmawan & Ny.",reception,,coming,2,"2025-09-02 09:28:48.814+00",alfon_parent_relation
@@ -306,7 +306,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 680,"Andi Wirawan & Lina Yanti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 681,Ismail,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 670,"Sylvie Darmawi",holy_matrimony,2,coming,1,"2025-09-07 00:53:50.63+00",cindy_parent_relation
-803,"Bill Theno & Partner",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 804,"Farandi Wijaya & Helen Hioe",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 805,"Melissa Nathalia & Andreas Goh",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 806,"Vivi Mega",reception,1,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
@@ -319,7 +318,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 816,"Adrian Nugroho",reception,1,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 817,"Albert Ruvell & Stella",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 818,"Weldy Rhadiska & Cindy",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
-822,Yoora,reception,1,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 823,"Ko Marcell & Ci Mey Lisa",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 824,"Henny Iswandi & Partner",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 825,"Fenita. P",reception,1,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
@@ -338,6 +336,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 828,"Dita. K",reception,1,coming,1,"2025-09-07 03:47:15.541+00",cindy_relation
 827,"Wihardi Susantio & Partner",reception,2,coming,2,"2025-09-07 03:49:56.116+00",cindy_relation
 801,"David Sjah & Michelle Vinisia",reception,2,coming,2,"2025-09-07 04:16:51.64+00",cindy_relation
+803,"Bill Theno & Partner",reception,2,coming,1,"2025-09-07 11:23:51.591+00",cindy_relation
 821,"Edwin Liauw & Devi",reception,2,coming,2,"2025-09-07 04:25:34.087+00",cindy_relation
 595,"Dian Savitri",holy_matrimony,1,coming,1,"2025-09-07 05:56:15.415+00",cindy_parent_relation
 901,"David Sjah & Michelle Vinisia",holy_matrimony,2,no_respond,,"2025-09-07 06:22:12.481751+00",cindy_relation
@@ -366,3 +365,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7020,"Bondan Eko Prasetyo & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7021,"Ambar Dwi Septian & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7022,"Ivan Bagaskara & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
+822,Yoora,reception,1,coming,1,"2025-09-07 13:03:36.69+00",cindy_relation
