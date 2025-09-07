@@ -311,7 +311,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 680,"Andi Wirawan & Lina Yanti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 681,Ismail,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 670,"Sylvie Darmawi",holy_matrimony,2,coming,1,"2025-09-07 00:53:50.63+00",cindy_parent_relation
-801,"David Djah & Michelle Vinisia",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 802,"Carla Tistiany",reception,1,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 803,"Bill Theno & Partner",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 804,"Farandi Wijaya & Helen Hioe",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
@@ -340,3 +339,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 827,"Wihardi Susantio & Partner",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 828,"Dita. K",reception,1,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
 829,"Akmalia & Partner",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
+801,"David Sjah & Michelle Vinisia",reception,2,no_respond,,"2025-09-07 00:58:31.51246+00",cindy_relation
