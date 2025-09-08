@@ -78,7 +78,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 123,"Paulus Tan & Theofila",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 124,"Theresia & Yoan",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 125,"Prodjo Sunarjanto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-126,"Handiarto & Melly",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 127,"Rudy Lim & Meliani",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 128,"Eka & Veronika",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 131,"Lili Budiman & Tuti Janti",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -92,6 +91,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6019,Mike,reception,,coming,1,"2025-09-07 13:48:57.021+00",alfon_parent_relation
 110,"Kwok Cau Pang & Fei Cen",reception,2,coming,2,"2025-09-07 14:12:08.657+00",cindy_parent_relation
 118,"Stephanus Rudi O. & Caecilia Betsy R.",reception,2,coming,2,"2025-09-08 05:03:00.422+00",cindy_parent_relation
+126,"Handiarto & Melly",reception,2,coming,2,"2025-09-08 10:54:34.413+00",cindy_parent_relation
 133,"Indra Djaya & Yulia Anastasia",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 134,"Agustinus Gianto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 135,"Toni & Lendy",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -102,7 +102,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 140,"Budi Susilo dan Nancy Widjajanti Halim",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 141,"Handoko & Vonny WP",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 143,"Imma Kumala",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-145,"Michael Liem & Jeanne Kim",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 146,"Hartanto Sundjojo",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 147,"Stanley Setianto",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 148,"Silvester Suhodo",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -368,3 +367,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 638,"Dewi Hdl Siawidjaja",holy_matrimony,1,coming,1,"2025-09-08 05:14:47.14+00",cindy_parent_relation
 570,Yemei,holy_matrimony,1,coming,1,"2025-09-08 06:09:23.25+00",cindy_parent_relation
 652,"Anton & Gadis",holy_matrimony,2,coming,2,"2025-09-08 09:41:05.348+00",cindy_parent_relation
+145,"Michael Liem & Jeanne Kim",reception,1,not_coming,,"2025-09-08 11:09:09.952+00",cindy_parent_relation
