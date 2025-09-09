@@ -102,7 +102,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 140,"Budi Susilo dan Nancy Widjajanti Halim",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 141,"Handoko & Vonny WP",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 146,"Hartanto Sundjojo",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-147,"Stanley Setianto",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 148,"Silvester Suhodo",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 149,"Siong & Wan Siang",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 150,"Budi Wahono & Istri",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -118,7 +117,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 163,"King Hwie",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 165,"Kris Anggioni & Marina",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 166,"Toni & Resna",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-167,"Natasha dan adiknya",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 168,"Louis Vito",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 169,"Matthew Ronadi",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 170,"Steven Kurniawan",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -170,6 +168,8 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 539,"Charles & Deasy",holy_matrimony,2,coming,2,"2025-09-08 23:22:42.37+00",cindy_parent_relation
 151,"Yanto dan Mei Lan",reception,2,coming,2,"2025-09-09 04:14:42.839+00",cindy_parent_relation
 542,"Robby dan Merry Angela",holy_matrimony,2,coming,2,"2025-09-09 09:48:07.032+00",cindy_parent_relation
+167,"Natasha & Nicholla",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
+147,"Stanley Setianto",reception,4,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 549,Lucia,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 550,Livia,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 551,"Jenny Alyar",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -392,3 +392,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 590,"Theresia Betty",holy_matrimony,1,coming,1,"2025-09-09 06:13:15.169+00",cindy_parent_relation
 684,"Sisca Susanti",holy_matrimony,1,coming,1,"2025-09-09 10:32:21.466+00",cindy_parent_relation
 143,"Imma Kumala",reception,1,not_coming,,"2025-09-09 13:08:37.97+00",cindy_parent_relation
+694,"David Riadi & Bernadette",holy_matrimony,2,no_respond,,"2025-09-09 13:33:14.600509+00",cindy_parent_relation
