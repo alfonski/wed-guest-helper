@@ -101,7 +101,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 139,"Tjan Swat Nio & Keluarga",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 140,"Budi Susilo dan Nancy Widjajanti Halim",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 141,"Handoko & Vonny WP",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-143,"Imma Kumala",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 146,"Hartanto Sundjojo",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 147,"Stanley Setianto",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 148,"Silvester Suhodo",reception,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -370,7 +369,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 830,"Mrs. Aryanti & Partner",reception,2,no_respond,,"2025-09-09 01:05:22.005467+00",cindy_relation
 832,"Mrs. Fransisca Suteja & Partner",reception,2,no_respond,,"2025-09-09 01:06:31.314944+00",cindy_relation
 833,"Ibu Sari ",reception,2,no_respond,,"2025-09-09 01:07:06.276751+00",cindy_relation
-171,"R Indra & Emiliana Yanti",reception,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 173,Marlien,reception,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 174,Afong,reception,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 682,"Kusmiyati Pontoh",holy_matrimony,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
@@ -383,6 +381,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 690,Hera,holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 691,"Mutia (Ing Cen)",holy_matrimony,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 172,"David Riadi & Bernadette",reception,2,coming,2,"2025-09-09 10:33:41.554+00",cindy_parent_relation
+171,"R Indra & Emiliana Yanti",reception,2,coming,2,"2025-09-09 12:37:15.957+00",cindy_parent_relation
 817,"Albert Ruvell & Stella",reception,2,coming,2,"2025-09-09 01:29:07.531+00",cindy_relation
 905,"Mrs. Fatty & Partner",holy_matrimony,2,no_respond,,"2025-09-09 02:07:49.894663+00",cindy_relation
 906,"Mrs. Aryanti & Partner",holy_matrimony,2,no_respond,,"2025-09-09 02:07:49.894663+00",cindy_relation
@@ -392,3 +391,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 153,"Linda Sagita & Hatta",reception,2,coming,2,"2025-09-09 06:03:26.634+00",cindy_parent_relation
 590,"Theresia Betty",holy_matrimony,1,coming,1,"2025-09-09 06:13:15.169+00",cindy_parent_relation
 684,"Sisca Susanti",holy_matrimony,1,coming,1,"2025-09-09 10:32:21.466+00",cindy_parent_relation
+143,"Imma Kumala",reception,1,not_coming,,"2025-09-09 13:08:37.97+00",cindy_parent_relation
