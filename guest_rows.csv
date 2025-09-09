@@ -393,13 +393,13 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 684,"Sisca Susanti",holy_matrimony,1,coming,1,"2025-09-09 10:32:21.466+00",cindy_parent_relation
 143,"Imma Kumala",reception,1,not_coming,,"2025-09-09 13:08:37.97+00",cindy_parent_relation
 694,"David Riadi & Bernadette",holy_matrimony,2,no_respond,,"2025-09-09 13:33:14.600509+00",cindy_parent_relation
-844,"Albert & Leonie Suhandinata",reception,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 845,"Ferdynand & Celia",reception,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 846,"Wilson Widjaja",reception,1,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
-847,"Riky & Naomi Budiman",reception,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 848,"Steven Guo & Tiffany Pariva",reception,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
-909,"Albert & Leonie Suhandinata",holy_matrimony,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
-910,"Ferdynand & Celia",holy_matrimony,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 911,"Wilson Widjaja",holy_matrimony,1,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
-912,"Riky & Naomi Budiman",holy_matrimony,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 913,"Steven Guo & Tiffany Pariva",holy_matrimony,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
+910,"Ferdynand & Celia",holy_matrimony,2,not_coming,,"2025-09-09 14:03:01.189+00",cindy_relation
+847,"Riky & Naomi Budiman",reception,2,coming,2,"2025-09-09 14:08:43.651+00",cindy_relation
+912,"Riky & Naomi Budiman",holy_matrimony,2,coming,2,"2025-09-09 14:05:08.526+00",cindy_relation
+909,"Albert & Leonie Suhandinata",holy_matrimony,3,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
+844,"Albert & Leonie Suhandinata",reception,4,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
