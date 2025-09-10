@@ -29,7 +29,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6014,Hera,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 6020,Nita,reception,,no_respond,,"2025-08-31 09:34:34.433135+00",alfon_parent_relation
 5026,"Sakkhi & Ny.",reception,,coming,2,"2025-09-02 09:37:47.741+00",alfon_parent_relation
-6033,Foku,reception,,no_respond,,"2025-09-02 15:06:21.104365+00",alfon_parent_relation
 6032,"Aleng & Ny.",reception,,no_respond,,"2025-09-02 15:05:42.125305+00",alfon_parent_relation
 6016,Kristin,reception,,coming,1,"2025-09-06 06:30:19.854+00",alfon_parent_relation
 6004,Meli,reception,,coming,1,"2025-09-04 04:38:42.842+00",alfon_parent_relation
@@ -92,6 +91,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6001,Melany,reception,,coming,2,"2025-09-09 11:51:59.249+00",alfon_parent_relation
 101,"Suwardi W. & Esther P.",reception,3,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 6022,Rusiana,reception,,coming,1,"2025-09-09 14:48:39.466+00",alfon_parent_relation
+6033,Foku,reception,,not_coming,,"2025-09-10 02:30:46.853+00",alfon_parent_relation
 133,"Indra Djaya & Yulia Anastasia",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 134,"Agustinus Gianto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 135,"Toni & Lendy",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
