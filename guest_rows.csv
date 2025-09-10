@@ -124,7 +124,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 509,"Andreas Limas & Mirna",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 510,"Anwar M. Arif & Sri Wahjoeni",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 512,"Henry Nungtjik",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-513,"Iskandar Widjaja",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 514,"Wong Rudy",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 515,"Martinus Sutrisno D.",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 517,Melani,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -392,9 +391,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 143,"Imma Kumala",reception,1,not_coming,,"2025-09-09 13:08:37.97+00",cindy_parent_relation
 694,"David Riadi & Bernadette",holy_matrimony,2,no_respond,,"2025-09-09 13:33:14.600509+00",cindy_parent_relation
 846,"Wilson Widjaja",reception,1,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
-848,"Steven Guo & Tiffany Pariva",reception,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 911,"Wilson Widjaja",holy_matrimony,1,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
-913,"Steven Guo & Tiffany Pariva",holy_matrimony,2,no_respond,,"2025-09-09 13:49:07.252077+00",cindy_relation
 910,"Ferdynand & Celia",holy_matrimony,2,not_coming,,"2025-09-09 14:03:01.189+00",cindy_relation
 847,"Riky & Naomi Budiman",reception,2,coming,2,"2025-09-09 14:08:43.651+00",cindy_relation
 912,"Riky & Naomi Budiman",holy_matrimony,2,coming,2,"2025-09-09 14:05:08.526+00",cindy_relation
@@ -403,3 +400,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 844,"Albert & Leonie Suhandinata",reception,4,coming,4,"2025-09-09 14:26:07.483+00",cindy_relation
 683,"Daniel & Enny",holy_matrimony,2,coming,2,"2025-09-09 18:59:57.067+00",cindy_parent_relation
 6038,"Chai Chan Fui & Ny.",reception,,no_respond,,"2025-09-09 16:02:03.898137+00",alfon_parent_relation
+913,"Steven Guo & Tiffany Pariva",holy_matrimony,2,not_coming,,"2025-09-10 12:35:54.969+00",cindy_relation
+848,"Steven Guo & Tiffany Pariva",reception,2,not_coming,,"2025-09-10 12:36:24.942+00",cindy_relation
+513,"Iskandar Widjaja",holy_matrimony,1,coming,1,"2025-09-10 13:22:17.16+00",cindy_parent_relation
