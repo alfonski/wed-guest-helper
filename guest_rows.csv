@@ -206,7 +206,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 589,"Maria Astrid Sugandi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 591,"Luciana ",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 592,Kevin,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-594,"Tedhy Djaya & Baby",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 597,"Paulus Tan",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 599,"Susanto Djaja & Fartalya",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 600,"Yoan G.",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -252,6 +251,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 566,Nona,holy_matrimony,2,coming,2,"2025-09-08 07:13:07.549+00",cindy_parent_relation
 604,"Christine Budiarto",holy_matrimony,2,coming,1,"2025-09-08 09:11:01.695+00",cindy_parent_relation
 552,"Sofian Widagdo & Sylvie W.",holy_matrimony,2,coming,2,"2025-09-10 03:58:08.265+00",cindy_parent_relation
+594,"Tedhy Djaya & Baby",holy_matrimony,2,coming,1,"2025-09-11 00:22:39.443+00",cindy_parent_relation
 639,"Julita Venansius",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 640,"Diana Teresa",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 641,"Amelia Agus",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -402,7 +402,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 913,"Steven Guo & Tiffany Pariva",holy_matrimony,2,not_coming,,"2025-09-10 12:35:54.969+00",cindy_relation
 848,"Steven Guo & Tiffany Pariva",reception,2,not_coming,,"2025-09-10 12:36:24.942+00",cindy_relation
 513,"Iskandar Widjaja",holy_matrimony,1,coming,1,"2025-09-10 13:22:17.16+00",cindy_parent_relation
-6039,Amui,reception,,no_respond,,"2025-09-10 13:38:46.299339+00",alfon_parent_relation
 6041,Lienjin,reception,,no_respond,,"2025-09-10 13:38:46.299339+00",alfon_parent_relation
 6042,Muklie,reception,,no_respond,,"2025-09-10 13:38:46.299339+00",alfon_parent_relation
 6043,Ango,reception,,no_respond,,"2025-09-10 13:38:46.299339+00",alfon_parent_relation
@@ -411,3 +410,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 697,"Imran Susantio & Linda",holy_matrimony,2,no_respond,,"2025-09-10 14:07:23.266683+00",cindy_parent_relation
 6038,"Chai Chan Fui & Ny.",reception,,coming,2,"2025-09-10 15:47:53.152+00",alfon_parent_relation
 6040,Ailie,reception,,coming,2,"2025-09-10 22:44:00.072+00",alfon_parent_relation
+6039,Amui,reception,,coming,2,"2025-09-11 01:09:51.922+00",alfon_parent_relation
