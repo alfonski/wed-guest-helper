@@ -322,7 +322,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 595,"Dian Savitri",holy_matrimony,1,coming,1,"2025-09-07 05:56:15.415+00",cindy_parent_relation
 901,"David Sjah & Michelle Vinisia",holy_matrimony,2,no_respond,,"2025-09-07 06:22:12.481751+00",cindy_relation
 902,"Billy Theno & Partner",holy_matrimony,2,no_respond,,"2025-09-07 06:23:43.618085+00",cindy_relation
-904,"Roy Christopher & Claudia",holy_matrimony,2,no_respond,,"2025-09-07 06:25:17.311391+00",cindy_relation
 7001,"Reinaldus Kutiyu & Laurentia Sandra",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7002,"Kenny Surianto & Jessica Hananta",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7003,Calvin,reception,1,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
@@ -454,3 +453,5 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 178,Amoylia,reception,2,no_respond,,"2025-09-11 15:07:59.853854+00",cindy_parent_relation
 179,"Betty Ngkeng",reception,2,no_respond,,"2025-09-11 15:07:59.853854+00",cindy_parent_relation
 180,"King & Yossie",reception,2,no_respond,,"2025-09-11 15:07:59.853854+00",cindy_parent_relation
+904,"Roy Christopher & Claudia",holy_matrimony,2,coming,2,"2025-09-11 15:18:43.922+00",cindy_relation
+718,Alvin,holy_matrimony,2,no_respond,,"2025-09-11 15:43:42.82678+00",cindy_parent_relation
