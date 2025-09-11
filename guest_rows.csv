@@ -365,7 +365,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 174,Afong,reception,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 682,"Kusmiyati Pontoh",holy_matrimony,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 685,"Andy & Lenny",holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
-686,"Inggawati & Herawati",holy_matrimony,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 687,"Yung Yung",holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 688,Herlina,holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 690,Hera,holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
@@ -428,3 +427,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6057,"Khin liung",reception,,no_respond,,"2025-09-11 12:16:32.7777+00",alfon_parent_relation
 6058,Fuicien,reception,,no_respond,,"2025-09-11 12:16:32.7777+00",alfon_parent_relation
 6059,Kiunfo,reception,,no_respond,,"2025-09-11 12:16:32.7777+00",alfon_parent_relation
+686,"Inggawati & Herawati",holy_matrimony,2,coming,2,"2025-09-11 13:40:33.768+00",cindy_parent_relation
