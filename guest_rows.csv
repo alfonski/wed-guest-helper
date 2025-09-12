@@ -326,7 +326,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7005,"Reyner Sturges",reception,1,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7006,"Albert Bowijaya & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7007,"Gavrila Sianturi & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
-7010,"Ivan Pratama & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7011,"Faisal Nur Arif & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7013,"Ferico Samuel & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7014,"Stefan David Hermanus & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
@@ -374,6 +373,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6037,"Pinpin & Ny.",reception,,coming,2,"2025-09-09 23:58:13.732+00",alfon_parent_relation
 903,"Jonathan Evan",holy_matrimony,1,coming,1,"2025-09-10 00:34:15.093+00",cindy_relation
 689,"Christa Wiranata",holy_matrimony,1,coming,1,"2025-09-11 06:39:44.498+00",cindy_parent_relation
+7010,"Ivan Pratama & Partner",reception,2,coming,2,"2025-09-12 17:56:34.104+00",alfon_relation
 817,"Albert Ruvell & Stella",reception,2,coming,2,"2025-09-09 01:29:07.531+00",cindy_relation
 905,"Mrs. Fatty & Partner",holy_matrimony,2,no_respond,,"2025-09-09 02:07:49.894663+00",cindy_relation
 906,"Mrs. Aryanti & Partner",holy_matrimony,2,no_respond,,"2025-09-09 02:07:49.894663+00",cindy_relation
