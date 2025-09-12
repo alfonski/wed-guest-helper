@@ -63,7 +63,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 121,"Agus honggo widodo & Vivi Rusli",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 123,"Paulus Tan & Theofila",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 124,"Theresia & Yoan",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-125,"Prodjo Sunarjanto",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 127,"Rudy Lim & Meliani",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 128,"Eka & Veronika",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 131,"Lili Budiman & Tuti Janti",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -80,6 +79,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 126,"Handiarto & Melly",reception,2,coming,2,"2025-09-08 10:54:34.413+00",cindy_parent_relation
 6029,"Yosep & Ny.",reception,,coming,2,"2025-09-09 02:00:12.967+00",alfon_parent_relation
 6002,Herawati,reception,,coming,1,"2025-09-09 05:48:39.103+00",alfon_parent_relation
+125,"Prodjo Sunarjanto",reception,2,coming,2,"2025-09-12 15:40:22.067+00",cindy_parent_relation
 6025,Wanwan,reception,,coming,2,"2025-09-09 08:27:22.366+00",alfon_parent_relation
 6015,Ieng,reception,,coming,1,"2025-09-09 09:57:24.131+00",alfon_parent_relation
 6027,Yunita,reception,,coming,2,"2025-09-09 11:33:05.401+00",alfon_parent_relation
