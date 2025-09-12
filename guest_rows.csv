@@ -456,3 +456,12 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 175,"Lili Budiman",reception,1,coming,1,"2025-09-12 08:36:00.438+00",cindy_parent_relation
 179,"Betty Ngkeng",reception,2,coming,2,"2025-09-12 10:05:41.464+00",cindy_parent_relation
 825,"Fenita. P",reception,1,not_coming,,"2025-09-12 17:12:56.247+00",cindy_relation
+6061,"Oki & Ny.",reception,,no_respond,,"2025-09-12 17:15:42.842311+00",alfon_parent_relation
+6062,Erna,reception,,no_respond,,"2025-09-12 17:16:05.846323+00",alfon_parent_relation
+719,"Imanuel Adam",holy_matrimony,2,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
+720,Henny,holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
+721,Lydia,holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
+722,Cathatina,holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
+723,"Lan Ing",holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
+724,Fanny,holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
+725,Freddy,holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
