@@ -466,3 +466,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 725,Freddy,holy_matrimony,1,no_respond,,"2025-09-12 17:21:38.759602+00",cindy_parent_relation
 824,"Henny Iswandi & Partner",reception,2,not_coming,,"2025-09-13 02:48:16.743+00",cindy_relation
 726,"Haryanto W.A. & Dewi T.",holy_matrimony,2,no_respond,,"2025-09-13 17:00:17.116984+00",cindy_parent_relation
+914,"Albert & Michelle Gabriella",reception,2,no_respond,,"2025-09-13 17:30:35.318091+00",cindy_relation
