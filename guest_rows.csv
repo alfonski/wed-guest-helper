@@ -469,7 +469,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 915,"Anastasia Hani",reception,1,no_respond,,"2025-09-14 04:34:40.614916+00",cindy_relation
 916,"Patricia Natalie & Partner",reception,2,no_respond,,"2025-09-14 04:35:42.810938+00",cindy_relation
 6063,"Riko & Ny",reception,,no_respond,,"2025-09-14 05:00:46.166916+00",alfon_parent_relation
-6065,Foku,reception,,no_respond,,"2025-09-14 05:02:23.51624+00",alfon_parent_relation
 917,"Kevin Widlansky & Partner",reception,2,no_respond,,"2025-09-14 05:06:16.379612+00",cindy_relation
 918,"Tim & Fulam",reception,2,no_respond,,"2025-09-14 05:08:40.730205+00",cindy_relation
 920,Kyrus,reception,1,no_respond,,"2025-09-14 05:32:32.363157+00",cindy_relation
@@ -483,3 +482,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6067,Eva,reception,,coming,3,"2025-09-14 10:45:00.266+00",alfon_parent_relation
 811,Viona,reception,2,coming,2,"2025-09-14 12:01:32.816+00",cindy_relation
 6071,Anie,reception,,no_respond,,"2025-09-14 15:08:13.969432+00",alfon_parent_relation
+6065,Foku,reception,,coming,1,"2025-09-14 15:40:42.839+00",alfon_parent_relation
