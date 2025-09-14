@@ -39,7 +39,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6003,Iva,reception,,coming,1,"2025-09-05 01:35:09.521+00",alfon_parent_relation
 6005,Merry,reception,,coming,1,"2025-09-07 08:31:59.175+00",alfon_parent_relation
 6026,Yeni,reception,,coming,1,"2025-09-06 11:39:46.298+00",alfon_parent_relation
-6034,Zizil,reception,,no_respond,,"2025-09-05 05:55:39.72649+00",alfon_parent_relation
 115,"Keluarga Besar Sri Redjeki",reception,2,coming,2,"2025-09-11 04:46:12.962+00",cindy_parent_relation
 6010,Lintang,reception,,coming,1,"2025-09-05 06:15:00.5+00",alfon_parent_relation
 6035,Lia,reception,,no_respond,,"2025-09-05 07:02:37.494965+00",alfon_parent_relation
@@ -91,6 +90,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 114,"Keluarga Besar Pakally",reception,2,coming,2,"2025-09-12 01:45:49.018+00",cindy_parent_relation
 109,"Erick P & Yessen",reception,2,coming,2,"2025-09-13 03:17:02.139+00",cindy_parent_relation
 108,"Keluarga Besar - Akoh Han Fie (Ie Sen)",reception,2,coming,1,"2025-09-13 13:52:55.075+00",cindy_parent_relation
+6034,Zizil,reception,,coming,1,"2025-09-14 07:29:10.627+00",alfon_parent_relation
 133,"Indra Djaya & Yulia Anastasia",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 136,"Didi &Yuli Goretti",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 137,"Cik Wawik & Koh Sien Hie",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
