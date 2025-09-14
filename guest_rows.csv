@@ -269,7 +269,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 667,Regina,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 668,Diana,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 671,"Elize dan Robby",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-672,Donny,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 673,"Donny Team - 1",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 674,"Donny Team - 2",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 675,Inowati,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -312,6 +311,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 811,Viona,reception,1,coming,1,"2025-09-13 16:48:47.09+00",cindy_relation
 807,"Windy Juwita & Partner",reception,2,coming,2,"2025-09-13 16:52:59.208+00",cindy_relation
 813,"Kelvin Pontan & Partner",reception,2,coming,2,"2025-09-13 23:29:35.241+00",cindy_relation
+672,"Donny & Team",holy_matrimony,3,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 821,"Edwin Liauw & Devi",reception,2,coming,2,"2025-09-07 04:25:34.087+00",cindy_relation
 595,"Dian Savitri",holy_matrimony,1,coming,1,"2025-09-07 05:56:15.415+00",cindy_parent_relation
 901,"David Sjah & Michelle Vinisia",holy_matrimony,2,no_respond,,"2025-09-07 06:22:12.481751+00",cindy_relation
@@ -467,3 +467,5 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 806,"Vivi Mega",reception,1,coming,1,"2025-09-14 02:06:56.577+00",cindy_relation
 586,"Veronica Muliaty",holy_matrimony,1,coming,1,"2025-09-14 03:42:26.12+00",cindy_parent_relation
 7022,Erlina,reception,2,coming,2,"2025-09-14 03:47:41.949+00",alfon_relation
+915,"Anastasia Hani",reception,1,no_respond,,"2025-09-14 04:34:40.614916+00",cindy_relation
+916,"Patricia Natalie & Partner",reception,2,no_respond,,"2025-09-14 04:35:42.810938+00",cindy_relation
