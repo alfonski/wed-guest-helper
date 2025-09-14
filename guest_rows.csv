@@ -196,7 +196,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 583,"Iron Barata Widjaja",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 584,"David Pangestu & Laura Veronica",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 585,"Albert Steven & Tina",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-586,"Veronica Muliaty",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 587,Nyrnawati,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 588,"Budhi & Fransisca",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 589,"Maria Astrid Sugandi",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -464,6 +463,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 824,"Henny Iswandi & Partner",reception,2,not_coming,,"2025-09-13 02:48:16.743+00",cindy_relation
 914,"Albert & Michelle Gabriella",reception,2,no_respond,,"2025-09-13 17:30:35.318091+00",cindy_relation
 726,"Haryanto W.A. & Dewi T.",holy_matrimony,2,coming,2,"2025-09-13 23:43:57.453+00",cindy_parent_relation
-7022,Erlina,reception,2,no_respond,,"2025-09-11 15:45:43.607163+00",alfon_relation
 6062,Erna,reception,,not_coming,,"2025-09-14 02:04:20.565+00",alfon_parent_relation
 806,"Vivi Mega",reception,1,coming,1,"2025-09-14 02:06:56.577+00",cindy_relation
+586,"Veronica Muliaty",holy_matrimony,1,coming,1,"2025-09-14 03:42:26.12+00",cindy_parent_relation
+7022,Erlina,reception,2,coming,2,"2025-09-14 03:47:41.949+00",alfon_relation
