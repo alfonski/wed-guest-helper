@@ -483,3 +483,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6065,Foku,reception,,coming,1,"2025-09-14 15:40:42.839+00",alfon_parent_relation
 920,Kyrus,reception,1,not_coming,,"2025-09-14 18:33:47.893+00",cindy_relation
 6071,Anie,reception,,coming,3,"2025-09-15 03:10:33.879+00",alfon_parent_relation
+7023,"Jefferson Setiawan & Partner",reception,2,no_respond,,"2025-09-15 04:48:55.059495+00",alfon_relation
