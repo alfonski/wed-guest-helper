@@ -480,6 +480,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 919,"Melissa N.",reception,1,coming,1,"2025-09-14 10:17:08.895+00",cindy_relation
 6067,Eva,reception,,coming,3,"2025-09-14 10:45:00.266+00",alfon_parent_relation
 811,Viona,reception,2,coming,2,"2025-09-14 12:01:32.816+00",cindy_relation
-6071,Anie,reception,,no_respond,,"2025-09-14 15:08:13.969432+00",alfon_parent_relation
 6065,Foku,reception,,coming,1,"2025-09-14 15:40:42.839+00",alfon_parent_relation
 920,Kyrus,reception,1,not_coming,,"2025-09-14 18:33:47.893+00",cindy_relation
+6071,Anie,reception,,coming,3,"2025-09-15 03:10:33.879+00",alfon_parent_relation
