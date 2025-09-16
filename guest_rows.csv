@@ -127,7 +127,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 524,"T.Johannes & Vera",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 525,"Christoforus Halim & Grace",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 526,"Joseph K & Tata",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-527,"Lie So Hun",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 528,"Henni Iriyawati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 530,"Imma Kumala",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 531,"Jack F.S Tedjo & Kumala Indriati",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -166,6 +165,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 512,"Henry Nungtjik",holy_matrimony,1,coming,1,"2025-09-12 11:15:49.028+00",cindy_parent_relation
 134,"Agustinus Gianto",reception,2,coming,1,"2025-09-13 07:09:24.792+00",cindy_parent_relation
 162,"Herman & Santi",reception,2,coming,2,"2025-09-12 18:54:26.439+00",cindy_parent_relation
+527,"Lie So Hun",holy_matrimony,2,coming,2,"2025-09-16 00:54:31.531+00",cindy_parent_relation
 529,"Arief Budiman & Liliana Lazuardy",holy_matrimony,2,coming,2,"2025-09-15 14:39:52.468+00",cindy_parent_relation
 549,Lucia,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 550,Livia,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
