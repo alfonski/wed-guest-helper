@@ -472,7 +472,9 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 917,"Kevin Widlansky & Partner",reception,2,no_respond,,"2025-09-14 05:06:16.379612+00",cindy_relation
 918,"Tim & Fulam",reception,2,no_respond,,"2025-09-14 05:08:40.730205+00",cindy_relation
 6069,Ripin,reception,,no_respond,,"2025-09-14 05:59:58.094336+00",alfon_parent_relation
+7024,"Benny Kurniawan",reception,1,no_respond,,"2025-09-16 11:39:12.042375+00",alfon_relation
 6066,Afu,reception,,coming,1,"2025-09-14 06:17:51.782+00",alfon_parent_relation
+181,"Arief Budiman & Liliana Lazuardy",reception,2,no_respond,,"2025-09-16 11:40:00.809158+00",cindy_parent_relation
 6070,Mimi,reception,,coming,1,"2025-09-14 08:22:56.723+00",alfon_parent_relation
 921,"Susan Liang",reception,1,no_respond,,"2025-09-14 05:56:40.692722+00",cindy_relation
 6064,Ahi,reception,,coming,1,"2025-09-14 09:15:59.329+00",alfon_parent_relation
@@ -484,3 +486,5 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 920,Kyrus,reception,1,not_coming,,"2025-09-14 18:33:47.893+00",cindy_relation
 6071,Anie,reception,,coming,3,"2025-09-15 03:10:33.879+00",alfon_parent_relation
 7023,"Jefferson Setiawan & Partner",reception,2,no_respond,,"2025-09-15 04:48:55.059495+00",alfon_relation
+727,Sian,holy_matrimony,2,no_respond,,"2025-09-16 11:41:16.834469+00",cindy_parent_relation
+728,Christine,holy_matrimony,2,no_respond,,"2025-09-16 11:41:31.250799+00",cindy_parent_relation
