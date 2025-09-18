@@ -216,7 +216,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 622,"Ade Setiawati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 623,"Sri Muliati",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 624,"Susy Tanamas",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-625,"Uniawaty Iskandar",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 626,"Vonny Mangindaan",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 627,Yuberty,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 628,"Yudi Hartawan & Oke",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -246,6 +245,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 582,Sance,holy_matrimony,1,coming,1,"2025-09-14 22:33:30.407+00",cindy_parent_relation
 591,"Luciana ",holy_matrimony,1,not_coming,,"2025-09-15 01:11:20.364+00",cindy_parent_relation
 616,"Jasinta Damonti",holy_matrimony,2,coming,1,"2025-09-15 02:58:56.599+00",cindy_parent_relation
+625,"Uniawaty Iskandar",holy_matrimony,1,coming,1,"2025-09-17 23:28:39.504+00",cindy_parent_relation
 639,"Julita Venansius",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 640,"Diana Teresa",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 641,"Amelia Agus",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
