@@ -489,7 +489,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 731,Heryanto,holy_matrimony,1,no_respond,,"2025-09-16 14:07:54.927743+00",cindy_parent_relation
 732,"Djeni Halim",holy_matrimony,1,no_respond,,"2025-09-16 14:07:54.927743+00",cindy_parent_relation
 733,Syenni,holy_matrimony,1,no_respond,,"2025-09-16 14:07:54.927743+00",cindy_parent_relation
-6073,Efendi,reception,,no_respond,,"2025-09-16 14:14:12.557549+00",alfon_parent_relation
 6061,"Oki & Ny.",reception,,coming,2,"2025-09-19 01:56:27.471+00",alfon_parent_relation
 922,"Yunitha Ratnadilla",reception,1,no_respond,,"2025-09-16 14:26:11.178058+00",cindy_relation
 923,"Abi Ibrahim & Partner",reception,2,no_respond,,"2025-09-16 14:26:42.249751+00",cindy_relation
@@ -499,3 +498,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 917,"Kevin Widlansky & Partner",reception,2,not_coming,,"2025-09-17 03:39:57.877+00",cindy_relation
 921,"Susan Liang",reception,1,coming,1,"2025-09-17 03:40:54.291+00",cindy_relation
 7025,Cason,reception,2,no_respond,,"2025-09-19 05:05:56.241692+00",alfon_relation
+6073,Efendi,reception,,coming,2,"2025-09-19 10:18:41.256+00",alfon_parent_relation
