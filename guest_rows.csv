@@ -88,7 +88,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6020,Nita,reception,,coming,1,"2025-09-10 11:45:55.092+00",alfon_parent_relation
 6011,Meilan,reception,,coming,1,"2025-09-10 15:25:38.304+00",alfon_parent_relation
 114,"Keluarga Besar Pakally",reception,2,coming,2,"2025-09-12 01:45:49.018+00",cindy_parent_relation
-109,"Erick P & Yessen",reception,2,coming,2,"2025-09-13 03:17:02.139+00",cindy_parent_relation
 108,"Keluarga Besar - Akoh Han Fie (Ie Sen)",reception,2,coming,1,"2025-09-13 13:52:55.075+00",cindy_parent_relation
 6034,Zizil,reception,,coming,1,"2025-09-14 07:29:10.627+00",alfon_parent_relation
 133,"Indra Djaya & Yulia Anastasia",reception,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -500,3 +499,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6074,"Agus & Ny.",reception,,no_respond,,"2025-09-20 09:49:17.767203+00",alfon_parent_relation
 7024,"Benny Kurniawan",reception,1,not_coming,,"2025-09-20 12:05:30.226+00",alfon_relation
 7023,"Jefferson Setiawan & Partner",reception,2,coming,2,"2025-09-20 13:28:59.084+00",alfon_relation
+109,"Erick P & Yessen",reception,2,coming,2,"2025-09-20 14:43:45.756+00",cindy_parent_relation
