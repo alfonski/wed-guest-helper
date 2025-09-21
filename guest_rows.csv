@@ -294,7 +294,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 804,"Farandi Wijaya & Helen Hioe",reception,2,coming,2,"2025-09-08 03:09:51.594+00",cindy_relation
 646,"Juanita Laksana",holy_matrimony,1,coming,1,"2025-09-08 04:08:30.255+00",cindy_parent_relation
 657,"Lim Tjoa Tjuan & Lie Hoa",holy_matrimony,2,coming,2,"2025-09-08 08:43:29.18+00",cindy_parent_relation
-680,"Andi Wirawan & Lina Yanti",holy_matrimony,2,coming,2,"2025-09-09 00:45:13.679+00",cindy_parent_relation
 692,"Laurensia Kim Kim",holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 818,"Weldy Rhadiska & Cindy",reception,2,not_coming,,"2025-09-09 16:16:59.761+00",cindy_relation
 815,"Phung Adi",reception,1,coming,1,"2025-09-10 06:05:27.613+00",cindy_relation
@@ -308,6 +307,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 658,Hartono,holy_matrimony,1,coming,1,"2025-09-19 14:10:47.115+00",cindy_parent_relation
 672,"Dony & Team",holy_matrimony,4,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 639,"Julita Venansius",holy_matrimony,1,coming,1,"2025-09-20 02:26:38.754+00",cindy_parent_relation
+680,"Andi Wirawan & Lina Yanti",holy_matrimony,2,coming,1,"2025-09-21 07:01:39.993+00",cindy_parent_relation
 821,"Edwin Liauw & Devi",reception,2,coming,2,"2025-09-07 04:25:34.087+00",cindy_relation
 595,"Dian Savitri",holy_matrimony,1,coming,1,"2025-09-07 05:56:15.415+00",cindy_parent_relation
 7002,"Kenny Surianto & Jessica Hananta",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
