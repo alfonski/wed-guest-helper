@@ -507,3 +507,5 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 735,Lily,holy_matrimony,1,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
 736,Vianty,holy_matrimony,1,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
 737,"Theresa Arifin",holy_matrimony,2,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
+7026,"Andhika Setiadi",reception,1,no_respond,,"2025-09-21 00:55:13.777402+00",alfon_relation
+7027,"Kelvin Saputra",reception,1,no_respond,,"2025-09-21 00:55:53.378188+00",alfon_relation
