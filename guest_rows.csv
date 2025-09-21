@@ -357,8 +357,8 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 689,"Christa Wiranata",holy_matrimony,1,coming,1,"2025-09-11 06:39:44.498+00",cindy_parent_relation
 7010,"Ivan Pratama & Partner",reception,2,coming,2,"2025-09-12 17:56:34.104+00",alfon_relation
 7013,"Ferico Samuel & Partner",reception,2,coming,2,"2025-09-13 03:10:36.35+00",alfon_relation
-7006,"Albert Bowijaya & Virginia",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7009,"Digital Khrisna Aurum & Partner",reception,2,coming,1,"2025-09-16 11:56:34.42+00",alfon_relation
+7006,"Albert Bowijaya & Virginia",reception,2,not_coming,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7017,"Wendy Liga & Partner",reception,2,coming,2,"2025-09-20 16:15:56.341+00",alfon_relation
 901,"David Sjah & Michelle Vinisia",holy_matrimony,2,coming,2,"2025-09-14 05:27:59.428+00",cindy_relation
 902,"Billy Theno & Partner",holy_matrimony,2,coming,1,"2025-09-14 05:28:33.786+00",cindy_relation
