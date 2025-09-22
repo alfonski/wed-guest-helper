@@ -311,7 +311,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7003,Calvin,reception,1,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7004,"Hendry Gustin & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7005,"Reyner Sturges",reception,1,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
-7011,"Faisal Nur Arif & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7020,"Bondan Eko Prasetyo & Partner",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 822,Yoora,reception,1,coming,1,"2025-09-07 13:03:36.69+00",cindy_relation
 142,"Amon Fernandes & Maria Theresia Luciana",reception,2,coming,2,"2025-09-07 14:36:23.625+00",cindy_parent_relation
@@ -509,3 +508,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 563,"Petrus W.H. & Anastasia",holy_matrimony,2,coming,2,"2025-09-22 02:49:17.107+00",cindy_parent_relation
 518,"Saputra Susanto & Titien",holy_matrimony,2,coming,2,"2025-09-22 10:09:45.416+00",cindy_parent_relation
 184,"Saputra & Titien",reception,2,coming,2,"2025-09-22 10:11:25.146+00",cindy_parent_relation
+7011,"Faisal Nur Arif & Partner",reception,2,coming,2,"2025-09-22 11:55:27.568+00",alfon_relation
