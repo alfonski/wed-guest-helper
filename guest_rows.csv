@@ -173,7 +173,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 560,"Aart Juliadi & Jacqueline",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 561,"Maria Tina",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 562,"Alexander Tejo & Rosana",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-563,"Petrus W.H. & Anastasia",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 564,"R. Indra & Emiliana Yanti",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 565,"F.X. Dede & Melly",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 568,"Yulius & Oni",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -509,3 +508,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 6074,"Agus & Ny.",reception,,coming,4,"2025-09-21 05:44:12.342+00",alfon_parent_relation
 7027,"Kelvin Saputra",reception,1,coming,1,"2025-09-21 05:48:37.802+00",alfon_relation
 159,"David Mardiyanto",reception,1,coming,1,"2025-09-21 08:35:38.327+00",cindy_parent_relation
+563,"Petrus W.H. & Anastasia",holy_matrimony,2,coming,2,"2025-09-22 02:49:17.107+00",cindy_parent_relation
