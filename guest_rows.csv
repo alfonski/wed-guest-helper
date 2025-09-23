@@ -496,7 +496,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7023,"Jefferson Setiawan & Partner",reception,2,coming,2,"2025-09-20 13:28:59.084+00",alfon_relation
 109,"Erick P & Yessen",reception,2,coming,2,"2025-09-20 14:43:45.756+00",cindy_parent_relation
 182,"Hendradi & Yaya",reception,2,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
-183,"Giok Cuan & Istri",reception,2,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
 734,"Merry Adinata",holy_matrimony,1,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
 735,Lily,holy_matrimony,1,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
 736,Vianty,holy_matrimony,1,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
@@ -514,3 +513,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 926,"Mr. Tommy Chendrawan & Mrs. Tina Tjokro",holy_matrimony,,no_respond,,"2025-09-22 14:56:49.64449+00",cindy_relation
 927,"Mr. Jason Chendrawan & Partner",holy_matrimony,,no_respond,,"2025-09-22 14:56:49.64449+00",cindy_relation
 928,"Mr. Russel Chendrawan & Partner",holy_matrimony,,no_respond,,"2025-09-22 14:56:49.64449+00",cindy_relation
+183,"Rudy Kurnianto & Nyonya",reception,2,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
