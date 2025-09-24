@@ -515,6 +515,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 925,"Sylvani Laurencia & Gianino",reception,2,coming,2,"2025-09-23 17:37:05.655+00",cindy_relation
 6075,Mithin,reception,,no_respond,,"2025-09-24 11:41:36.710534+00",alfon_parent_relation
 182,"Hendradi & Yaya",reception,2,not_coming,,"2025-09-24 13:16:37.353+00",cindy_parent_relation
-7028,"Alvin Matthew Pratama",reception,1,no_respond,,"2025-09-24 14:14:01.850896+00",alfon_relation
-7029,"Dhio Etanasti",reception,2,no_respond,,"2025-09-24 14:14:29.380937+00",alfon_relation
 929,"Sheria Dania",reception,1,no_respond,,"2025-09-24 14:16:13.285386+00",cindy_relation
+7028,"Alvin Matthew Pratama",reception,1,coming,1,"2025-09-24 14:26:28.441+00",alfon_relation
+7029,"Dhio Etanasti",reception,2,coming,1,"2025-09-24 14:28:14.491+00",alfon_relation
