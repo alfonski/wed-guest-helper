@@ -196,7 +196,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 599,"Susanto Djaja & Fartalya",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 600,"Yoan G.",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 601,Yessica,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-603,"Cindy Adelia",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 605,"Conny Yaputri",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 608,"Brigite Caroline",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 609,"Dessy Anggraini",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -242,6 +241,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 625,"Uniawaty Iskandar",holy_matrimony,1,coming,1,"2025-09-17 23:28:39.504+00",cindy_parent_relation
 633,"widjayanti Agnes",holy_matrimony,1,coming,1,"2025-09-18 09:56:32.028+00",cindy_parent_relation
 579,AmoyLia,holy_matrimony,2,coming,2,"2025-09-19 00:43:01.989+00",cindy_parent_relation
+603,"Cindy Adelia",holy_matrimony,2,coming,1,"2025-09-25 00:31:50.622+00",cindy_parent_relation
 640,"Diana Teresa",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 641,"Amelia Agus",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 644,"Peggy Leonardy",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -340,7 +340,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 688,Herlina,holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 690,Hera,holy_matrimony,1,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
 691,"Mutia (Ing Cen)",holy_matrimony,2,no_respond,,"2025-09-09 01:12:54.193933+00",cindy_parent_relation
-172,"David Riadi & Bernadette",reception,2,coming,2,"2025-09-09 10:33:41.554+00",cindy_parent_relation
+172,"David Riadi & Bernadette",reception,2,not_coming,,"2025-09-25 00:41:56.583+00",cindy_parent_relation
 171,"R Indra & Emiliana Yanti",reception,2,coming,2,"2025-09-09 12:37:15.957+00",cindy_parent_relation
 7021,"Ambar Dwi Septian & Partner",reception,2,coming,1,"2025-09-16 15:01:01.999+00",alfon_relation
 7012,Kensen,reception,2,coming,2,"2025-09-09 16:22:41.488+00",alfon_relation
