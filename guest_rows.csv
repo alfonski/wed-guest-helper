@@ -513,8 +513,8 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 183,"Rudy Kurnianto & Nyonya",reception,2,no_respond,,"2025-09-21 00:24:17.53992+00",cindy_parent_relation
 925,"Sylvani Laurencia & Gianino",reception,2,coming,2,"2025-09-23 17:37:05.655+00",cindy_relation
 182,"Hendradi & Yaya",reception,2,not_coming,,"2025-09-24 13:16:37.353+00",cindy_parent_relation
-929,"Sheria Dania",reception,1,no_respond,,"2025-09-24 14:16:13.285386+00",cindy_relation
 7028,"Alvin Matthew Pratama",reception,1,coming,1,"2025-09-24 14:26:28.441+00",alfon_relation
 7029,"Dhio Etanasti",reception,2,coming,1,"2025-09-24 14:28:14.491+00",alfon_relation
 6075,Mithin,reception,,not_coming,,"2025-09-25 04:01:28.788+00",alfon_parent_relation
 553,"Andi Suryadi & Mina",holy_matrimony,2,coming,2,"2025-09-26 00:37:50.742+00",cindy_parent_relation
+929,"Sheria Dania",reception,1,not_coming,,"2025-09-26 10:42:18.299+00",cindy_relation
