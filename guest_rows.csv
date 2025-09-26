@@ -165,7 +165,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 161,"Subiat & istri",reception,2,coming,2,"2025-09-25 02:41:35.92+00",cindy_parent_relation
 549,Lucia,holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 550,Livia,holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
-553,"Andi Suryadi & Mina",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 555,"Wirawan Saputra & Rosita",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 557,"Herawati Wibowo",holy_matrimony,1,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
 558,"Kindhy & Linda",holy_matrimony,2,no_respond,,"2025-09-06 01:35:18.897741+00",cindy_parent_relation
@@ -518,3 +517,4 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7028,"Alvin Matthew Pratama",reception,1,coming,1,"2025-09-24 14:26:28.441+00",alfon_relation
 7029,"Dhio Etanasti",reception,2,coming,1,"2025-09-24 14:28:14.491+00",alfon_relation
 6075,Mithin,reception,,not_coming,,"2025-09-25 04:01:28.788+00",alfon_parent_relation
+553,"Andi Suryadi & Mina",holy_matrimony,2,coming,2,"2025-09-26 00:37:50.742+00",cindy_parent_relation
