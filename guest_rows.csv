@@ -306,7 +306,6 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 680,"Andi Wirawan & Lina Yanti",holy_matrimony,2,coming,1,"2025-09-21 07:01:39.993+00",cindy_parent_relation
 821,"Edwin Liauw & Devi",reception,2,coming,2,"2025-09-07 04:25:34.087+00",cindy_relation
 595,"Dian Savitri",holy_matrimony,1,coming,1,"2025-09-07 05:56:15.415+00",cindy_parent_relation
-7002,"Kenny Surianto & Jessica Hananta",reception,2,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7003,Calvin,reception,1,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 7005,"Reyner Sturges",reception,1,no_respond,,"2025-09-07 06:59:52.719218+00",alfon_relation
 822,Yoora,reception,1,coming,1,"2025-09-07 13:03:36.69+00",cindy_relation
@@ -360,6 +359,7 @@ id,name,invitation_type,max_pax,rsvp_status,rsvp_pax,updated_at,relation
 7020,"Bondan Eko Prasetyo & Partner",reception,2,coming,2,"2025-09-23 01:35:51.017+00",alfon_relation
 7004,"Hendry Gustin & Partner",reception,2,coming,2,"2025-09-25 16:48:31.899+00",alfon_relation
 690,Hera,holy_matrimony,1,coming,1,"2025-09-26 12:59:27.597+00",cindy_parent_relation
+7002,"Kenny Surianto & Jessica Hananta",reception,2,coming,2,"2025-09-26 15:00:01.759+00",alfon_relation
 817,"Albert Ruvell & Stella",reception,2,coming,2,"2025-09-09 01:29:07.531+00",cindy_relation
 905,"Mrs. Fatty & Partner",holy_matrimony,2,no_respond,,"2025-09-09 02:07:49.894663+00",cindy_relation
 906,"Mrs. Aryanti & Partner",holy_matrimony,2,no_respond,,"2025-09-09 02:07:49.894663+00",cindy_relation
